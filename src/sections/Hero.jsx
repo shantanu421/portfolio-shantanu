@@ -50,7 +50,7 @@ const Hero = () => {
                     <HeroCamera isMobile={isMobile}>
                         <HackerRoom 
                         position={sizes.deskPosition}
-                        rotation={[0, -Math.PI, 0]}
+                        // rotation={[]}
                         scale={sizes.deskScale}
                         
                         />
@@ -63,7 +63,7 @@ const Hero = () => {
                       <Rings position={sizes.ringPosition} />
                     </group>
 
-                    <ambientLight intensity={1} />
+                    <ambientLight intensity={1.1} />
                     <directionalLight position={[10, 10, 10]} intensity={0.5} />
 
                 </Suspense>
