@@ -7,7 +7,7 @@ import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants/index.js";
 import HeroCamera from "../components/HeroCamera.jsx";
 import Button from "../components/Button.jsx";
-import { ExpressLogo, MongoDbLogo, NodeLogo, ReactLogo } from "../components/Logos.jsx";
+import {ReactLogo, NodeLogo, ExpressLogo, MongoDbLogo} from "../components/Logos.jsx";
 
 
 
@@ -26,7 +26,7 @@ const Hero = () => {
       
         <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
             
-            <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">Hii, I'm Shantanu Saraf<span className="waving-hand">👋</span></p>
+            <p className="sm:text-3xl mt-[-11px] text-2xl font-medium text-white text-center font-generalsans">Hii, I'm Shantanu Saraf<span className="waving-hand">👋</span></p>
             
             <p className="hero_tag text-gray_gradient">
                 Building Frontend & Backend with ❤️

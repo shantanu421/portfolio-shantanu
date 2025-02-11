@@ -171,15 +171,15 @@ body {
   }
 
   .nav-ul {
-    @apply flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative z-20;
+    @apply flex flex-col items-center gap-4 sm:flex-row md:gap-12 relative z-20;
   }
 
   .nav-li {
-    @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply text-neutral-400 font-[500]  hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base hover:text-white transition-colors;
+    @apply text-lg md:text-[18px] hover:text-white transition-colors;
   }
 
   .nav-sidebar {
@@ -265,80 +265,76 @@ body {
   }
 
 
-  /* React logo */
-  
-  .react-glowing-logo {
-    position: absolute;
-    margin-left: -60px;
-    margin-top: -380px;
-    width: 100px;
-    animation: glow 1.5s infinite alternate;
-  }
-  
-  @keyframes glow {
-    0% {
-      filter: drop-shadow(0 0 5px #61dafb);
-    }
-    100% {
-      filter: drop-shadow(0 0 20px #61dafb);
-    }
-  }
+ /* Common styles for logos */
+.logo {
+  position: absolute;
+  width: 100px;
+  opacity: 0;
+  animation: fadeIn 3s forwards ease-in-out, glow 3s infinite alternate ease-in-out;
+}
 
-  /* Node Logo */
-  .node-glowing-logo {
-    position: absolute;
-    margin-left: 100px;
-    margin-top: -180px;
-    width: 100px;
-    animation: glow 1.5s infinite alternate;
-  }
-  
-  @keyframes glow {
-    0% {
-      filter: drop-shadow(0 0 5px #61dafb);
-    }
-    100% {
-      filter: drop-shadow(0 0 20px #61dafb);
-    }
-  }
+/* React logo */
+.react-glowing-logo {
+  margin-left: -80px;
+  margin-top: -430px;
+  animation-delay: 3s, 3s;
+}
 
-  /* Express Logo */
-  .express-glowing-logo {
-    position: absolute;
-    margin-left: 300px;
-    margin-top: -380px;
-    width: 100px;
-    animation: glow 1.5s infinite alternate;
-  }
-  
-  @keyframes glow {
-    0% {
-      filter: drop-shadow(0 0 5px #61dafb);
-    }
-    100% {
-      filter: drop-shadow(0 0 20px #61dafb);
-    }
-  }
+/* Node.js logo */
+.node-glowing-logo {
+  margin-left: 100px;
+  margin-top: -160px;
+  animation-delay: 6s, 6s;
+}
 
-  /* MongoDb Logo */
-  .mongo-glowing-logo {
-    position: absolute;
-    margin-left: 500px;
-    margin-top: -380px;
-    width: 100px;
-    animation: glow 1.5s infinite alternate;
-  }
-  
-  @keyframes glow {
-    0% {
-      filter: drop-shadow(0 0 5px #61dafb);
-    }
-    100% {
-      filter: drop-shadow(0 0 20px #61dafb);
-    }
-  }
-  
+/* Express logo */
+.express-glowing-logo {
+  margin-left: 1270px;
+  margin-top: -450px;
+  animation-delay: 9s, 9s;
+  width: 100px;
+}
 
+/* MongoDB logo */
+.mongo-glowing-logo {
+  margin-left: 1050px;
+  margin-top: -170px;
+  animation-delay: 12s, 12s;
+}
+
+/* Glow effect */
+@keyframes glow {
+  0% {
+      filter: drop-shadow(0 0 5px #61dafb);
+  }
+  100% {
+      filter: drop-shadow(0 0 25px #61dafb);
+  }
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  25% {
+      opacity: 0.1;
+  }
+  50% {
+      opacity: 0.2;
+  }
+  75% {
+      opacity: 0.5;
+  }
+  90% {
+      opacity: 0.7;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+  
 
   /* hero section */
   .hero_tag {
