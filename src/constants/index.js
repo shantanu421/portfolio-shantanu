@@ -213,8 +213,8 @@ export const myProjects = [
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
-    deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 1.3,
-    deskPosition: isMobile ? [0.5, -4.5, 0] : [2.1, -5.5, 0],
+    deskScale: isSmall ? 0.7 : isMobile ? 0.9 : 1.3,
+    deskPosition: isMobile ? [0.8, -3.5, 0] : [2.1, -5, 0],
     cubePosition: isSmall
       ? [4, -5, 0]
       : isMobile
@@ -242,7 +242,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
       ? [-9, -10, -10]
       : isTablet
       ? [-11, -7, -10]
-      : [-13, -10, -10],
+      : [-13, 7, -10],
   };
 };
 

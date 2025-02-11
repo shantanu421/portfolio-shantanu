@@ -5,12 +5,9 @@ import CanvasLoader from "../components/CanvasLoader"
 import { Suspense } from 'react';
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants/index.js";
-import Target from "../components/Target.jsx";
-import ReactLogo from "../components/ReactLogo.jsx";
-import Cube from "../components/Cube.jsx";
-import Rings from "../components/Rings.jsx";
 import HeroCamera from "../components/HeroCamera.jsx";
 import Button from "../components/Button.jsx";
+import { ExpressLogo, MongoDbLogo, NodeLogo, ReactLogo } from "../components/Logos.jsx";
 
 
 
@@ -29,7 +26,7 @@ const Hero = () => {
       
         <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
             
-            <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">Hii, I'm Shantanu <span className="waving-hand">👋</span></p>
+            <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">Hii, I'm Shantanu Saraf<span className="waving-hand">👋</span></p>
             
             <p className="hero_tag text-gray_gradient">
                 Building Frontend & Backend with ❤️
@@ -40,6 +37,7 @@ const Hero = () => {
         <div className="w-full h-full absolute inset-0">
           
         {/* <Leva /> */}
+
 
             <Canvas className="w-full h-full">
 
@@ -56,12 +54,14 @@ const Hero = () => {
                         />
                       </HeroCamera>
 
-                    <group>
+                    {/* <group>
                       <Target position={sizes.targetPosition} />
                       <ReactLogo position={sizes.reactLogoPosition}/>
                       <Cube position={sizes.cubePosition} />
                       <Rings position={sizes.ringPosition} />
-                    </group>
+                      
+                    </group> */}
+                    
 
                     <ambientLight intensity={1.1} />
                     <directionalLight position={[10, 10, 10]} intensity={0.5} />
@@ -69,6 +69,12 @@ const Hero = () => {
                 </Suspense>
 
             </Canvas>
+
+             <ReactLogo />
+             <NodeLogo />
+             <ExpressLogo />
+             <MongoDbLogo />
+
 
         </div>
 
