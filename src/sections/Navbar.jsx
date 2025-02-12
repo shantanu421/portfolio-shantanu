@@ -3,31 +3,35 @@ import { navLinks } from "../constants";
 
 const NavItems = () => {
     return (
-        <ul className="nav-ul">
-
-            {navLinks.map(({ id, name, href, type }) => (
-
-                <li key={id} className="nav-li">
-                    {type === "github" ? (
-
-                        <a href={href} target="_blank" rel="noopener noreferrer" className="github-button">
-
-                            <img src='/logos/github.png' alt="GitHub" className="github-logo" />
-                            <img src='/logos/star.png' alt="GitHub" className="star-logo" />
-                      
-                            
-                        </a>
-
-                    ) : (
-                        <a href={href} className="nav-li_a" onClick={() => {}}>
-                            {name}
-                        </a>
-                    )}
-                </li>
-            ))}
-        </ul>
+      <ul className="nav-ul">
+        {navLinks.map(({ id, name, href, type, icon }) => (
+          <li key={id} className="nav-li group">
+            {type === "github" ? (
+              <a href={href} target="_blank" rel="noopener noreferrer" className="github-button">
+                <img src="/logos/github.png" alt="GitHub" className="github-logo" />
+                <img src="/logos/star.png" alt="GitHub" className="star-logo" />
+              </a>
+            ) : (
+              <a href={href} className="nav-li_a">
+                <span className="flex items-center gap-2 transition-colors">
+                  {icon && (
+                    <img
+                      src={icon}
+                      alt={name}
+                      className="w-4 h-4 transition-all duration-500 opacity-70 group-hover:opacity-100"
+                    />
+                  )}
+                  {name}
+                </span>
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
     );
-};
+  };
+  
+  
 
 const Navbar = () => {
 
@@ -40,7 +44,7 @@ const Navbar = () => {
       
         <div className="max-w-7xl mx-auto">
             
-            <div className="flex justify-between items-center py-5 mx-auto c-space">
+            <div className="flex justify-between items-center py-5 mx-auto mt-[-13px] c-space">
 
                 <a href="/" className="text-neutral-400 font-bold text-3xl hover:text-white transition-colors">
                     Ss.

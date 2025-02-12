@@ -2,7 +2,7 @@ import React from 'react'
 
 const Button = ({ name, isBeam = false, containerClass }) => {
   return (
-    <button className={`btn glow-on-hover  ${containerClass}`}>
+    <button className={`btn glow-on-hover ${containerClass}`}>
 
         {isBeam && (
             <span className='relative flex h-3 w-3'>

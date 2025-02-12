@@ -10,7 +10,6 @@ import Button from "../components/Button.jsx";
 import {ReactLogo, NodeLogo, ExpressLogo, MongoDbLogo} from "../components/Logos.jsx";
 
 
-
 const Hero = () => {
 
 
@@ -29,16 +28,11 @@ const Hero = () => {
             <p className="sm:text-3xl mt-[-11px] text-2xl font-medium text-white text-center font-generalsans">Hii, I'm Shantanu Saraf<span className="waving-hand">👋</span></p>
             
             <p className="hero_tag text-gray_gradient">
-                {/* <Typewriter
-                  words={["Building Frontend & Backend with ❤️", "Creating Scalable Web Apps", "Crafting Beautiful UI/UX"]}
-                  loop={0} 
-                  cursor
-                  cursorStyle="|" 
-                  typeSpeed={80}
-                  deleteSpeed={50}
-                  delaySpeed={1500} 
-                /> */}
+              
+             Building <span className="text-blue-300">Frontend</span> & <span className="text-green-300">Backend</span> 
+
             </p>
+
 
         </div>
 
@@ -90,7 +84,7 @@ const Hero = () => {
 
             <a href="#contact" className="w-fit">
 
-              <Button name="Lets work!" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
+              <Button name="Download Resume" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
 
             </a>
 
