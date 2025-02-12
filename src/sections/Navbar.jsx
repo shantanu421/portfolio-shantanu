@@ -4,16 +4,30 @@ import { navLinks } from "../constants";
 const NavItems = () => {
     return (
         <ul className="nav-ul">
-            {navLinks.map(({ id, name, href }) => (
+
+            {navLinks.map(({ id, name, href, type }) => (
+
                 <li key={id} className="nav-li">
-                    <a href={href} className="nav-li_a" onClick={() => {}}>
-                        {name}
-                    </a>
+                    {type === "github" ? (
+
+                        <a href={href} target="_blank" rel="noopener noreferrer" className="github-button">
+
+                            <img src='/logos/github.png' alt="GitHub" className="github-logo" />
+                            <img src='/logos/star.png' alt="GitHub" className="star-logo" />
+                      
+                            
+                        </a>
+
+                    ) : (
+                        <a href={href} className="nav-li_a" onClick={() => {}}>
+                            {name}
+                        </a>
+                    )}
                 </li>
             ))}
         </ul>
-    )
-}
+    );
+};
 
 const Navbar = () => {
 

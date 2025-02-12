@@ -11,13 +11,18 @@ export const navLinks = [
   },
   {
     id: 3,
-    name: "Work",
-    href: "#work",
+    name: "Projects",
+    href: "#projects",
   },
   {
     id: 4,
     name: "Contact",
     href: "#contact",
+  },
+  {
+    id: 5,
+    href: "https://github.com/shantanu421/portfolio-shantanu.git",
+    type: "github"
   },
 ];
 

@@ -29,7 +29,15 @@ const Hero = () => {
             <p className="sm:text-3xl mt-[-11px] text-2xl font-medium text-white text-center font-generalsans">Hii, I'm Shantanu Saraf<span className="waving-hand">👋</span></p>
             
             <p className="hero_tag text-gray_gradient">
-                Building Frontend & Backend with ❤️
+                {/* <Typewriter
+                  words={["Building Frontend & Backend with ❤️", "Creating Scalable Web Apps", "Crafting Beautiful UI/UX"]}
+                  loop={0} 
+                  cursor
+                  cursorStyle="|" 
+                  typeSpeed={80}
+                  deleteSpeed={50}
+                  delaySpeed={1500} 
+                /> */}
             </p>
 
         </div>
