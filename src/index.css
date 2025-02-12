@@ -310,7 +310,6 @@ body {
  /* Common styles for logos */
 .logo {
   position: absolute;
-  width: 100px;
   opacity: 0;
   animation: fadeIn 3s forwards ease-in-out, glow 3s infinite alternate ease-in-out;
 }

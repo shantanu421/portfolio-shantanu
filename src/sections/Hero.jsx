@@ -33,7 +33,6 @@ const Hero = () => {
 
             </p>
 
-
         </div>
 
         <div className="w-full h-full absolute inset-0">

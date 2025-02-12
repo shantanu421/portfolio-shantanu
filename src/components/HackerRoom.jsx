@@ -5,7 +5,7 @@ import { useGLTF, useTexture } from '@react-three/drei'
 const HackerRoom = (props) => {
 
   const { nodes, materials } = useGLTF('/models/programmer.glb')
-  const screenDisplay = useTexture('textures/desk/screen.png')
+  const screenDisplay = useTexture('textures/desk/codeDisp.png')
 
 
   return (
