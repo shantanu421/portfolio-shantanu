@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { navLinks } from "../constants";
 
 const NavItems = () => {
@@ -36,11 +36,30 @@ const NavItems = () => {
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen)
 
+    useEffect(() => {
+      const handleScroll = () => {
+        // If the user scrolls more than 50px, set scrolled state to true
+        if (window.scrollY > 50) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      };
+  
+      // Add scroll event listener when component mounts
+      window.addEventListener("scroll", handleScroll);
+  
+      // Cleanup function to remove event listener when component unmounts
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
   return (
-    <header className='fixed top-0 left-0 right-0 z-50'>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 
+      ${scrolled ? "bg-black-200 shadow-md" : "bg-transparent"}`}>
       
         <div className="max-w-7xl mx-auto">
             
@@ -64,7 +83,7 @@ const Navbar = () => {
 
         <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-w-0'}`}>
 
-            <nav className="p-5">
+            <nav className="p-5 ">
                 <NavItems />
             </nav>
 

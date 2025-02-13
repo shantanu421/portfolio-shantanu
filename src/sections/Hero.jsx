@@ -7,6 +7,7 @@ import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants/index.js";
 import HeroCamera from "../components/HeroCamera.jsx";
 import Button from "../components/Button.jsx";
+import pdf from "/assets/Shantanu_Saraf_Resume.pdf"
 import {ReactLogo, NodeLogo, ExpressLogo, MongoDbLogo} from "../components/Logos.jsx";
 
 
@@ -81,7 +82,7 @@ const Hero = () => {
 
         <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space"> 
 
-            <a href="#contact" className="w-fit">
+            <a href={pdf} target="_blank" className="w-fit">
 
               <Button name="Download Resume" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
 

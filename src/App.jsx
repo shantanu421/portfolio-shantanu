@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
-import "./index.css"
+import About from './sections/About'
 
 
 const App = () => {
@@ -12,6 +12,7 @@ const App = () => {
      
       <Navbar />
       <Hero />
+      <About />
   
     </main>
   )
