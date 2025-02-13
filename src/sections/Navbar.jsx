@@ -42,7 +42,6 @@ const Navbar = () => {
 
     useEffect(() => {
       const handleScroll = () => {
-        // If the user scrolls more than 50px, set scrolled state to true
         if (window.scrollY > 50) {
           setScrolled(true);
         } else {
@@ -50,10 +49,8 @@ const Navbar = () => {
         }
       };
   
-      // Add scroll event listener when component mounts
       window.addEventListener("scroll", handleScroll);
   
-      // Cleanup function to remove event listener when component unmounts
       return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
