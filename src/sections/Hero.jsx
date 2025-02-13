@@ -82,7 +82,7 @@ const Hero = () => {
 
         <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space"> 
 
-            <a href={pdf} target="_blank" className="w-fit">
+            <a href={pdf} target="_blank" rel="noreferrer" className="w-fit">
 
               <Button name="Download Resume" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
 
