@@ -252,6 +252,10 @@ body {
     @apply w-full h-full border border-black-300 bg-black-300 bg-opacity-55 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
 }
 
+.contactGrid-container {
+  @apply w-[450px] h-full bg-black-300 bg-opacity-25 rounded-xl sm:p-7 p-4 flex flex-col;
+}
+
 
   .grid-headtext {
     @apply text-xl font-semibold mb-2 text-white font-generalsans;
