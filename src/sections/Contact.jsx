@@ -1,0 +1,53 @@
+import React, { useState } from 'react';
+
+const Contact = () => {
+  const [hasCopied, setHasCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("adrian@jsmastery.pro");
+    setHasCopied(true);
+
+    setTimeout(() => {
+      setHasCopied(false);
+    }, 2000);
+  };
+
+  return (
+    <section className="c-space my-20 w-full" id="contact">
+      {/* Contact Heading with Image */}
+      <div className="flex items-center justify-center gap-4">
+        <p className="head-text">Contact me</p>
+        <img
+          src="assets/email1.svg"
+          alt="Email Icon"
+          className={`w-[40px] md:w-[50px] object-contain transition-transform duration-500 ${
+            hasCopied ? 'rotate-180' : ''
+          }`}
+        />
+      </div>
+
+      {/* Full-Width Contact Grid */}
+      <div className="flex flex-col md:flex-row items-center w-full sm:gap-48 gap-10 mt-6">
+        <div className="contactGrid-container sm:w-full">
+          <img
+            src="assets/grid4.png"
+            alt="grid-4"
+            className="w-full md:h-[126px] sm:h-[276px] h-28 object-contain sm:object-contain"
+          />
+
+          <div className="space-y-2 text-center">
+            <p className="grid-subtext">Contact me</p>
+            <div className="copy-container flex items-center justify-center gap-2 cursor-pointer" onClick={handleCopy}>
+              <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
+              <p className="lg:text-2xl md:text-xl text-xl text-gray_gradient text-white">
+                adrian@jsmastery.pro
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
