@@ -15,7 +15,7 @@ const About = () => {
   };
 
   return (
-    <section className='c-space my-20 '>
+    <section className='c-space my-20 ' id='about'>
 
 <p className='head-text mb-[25px]'> Know me</p>
 
