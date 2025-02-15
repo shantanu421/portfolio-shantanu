@@ -5,6 +5,8 @@ import About from "./sections/About";
 import Starfield from "./components/Starfield"; 
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
+import WorkExperience from "./sections/Experience";
 
 const App = () => {
   return (
@@ -15,7 +17,9 @@ const App = () => {
         <Hero />
         <About />
         <Projects />
+        <WorkExperience />
         <Contact />
+        <Footer />
       </main>
     </>
   );

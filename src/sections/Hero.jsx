@@ -38,7 +38,6 @@ const Hero = () => {
 
         <div className="w-full h-full absolute inset-0">
           
-        {/* <Leva /> */}
 
 
             <Canvas className="w-full h-full">

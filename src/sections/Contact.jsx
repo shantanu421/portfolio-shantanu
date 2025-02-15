@@ -14,19 +14,22 @@ const Contact = () => {
 
   return (
     <section className="c-space my-20 w-full" id="contact">
-      {/* Contact Heading with Image */}
-      <div className="flex items-center justify-center gap-4">
+
+      <div className="flex items-center justify-center gap-4 relative">
+
         <p className="head-text">Contact me</p>
-        <img
-          src="assets/email1.svg"
-          alt="Email Icon"
-          className={`w-[40px] md:w-[50px] object-contain transition-transform duration-500 ${
-            hasCopied ? 'rotate-180' : ''
-          }`}
-        />
+        
+        <div className="relative w-[50px] h-[50px]">
+
+          <img
+            src="assets/email1.svg"
+            alt="Email Icon"
+            className="absolute top-0 left-0 w-full h-full object-contain transition-transform duration-500"
+            style={{ transform: hasCopied ? 'rotate(180deg)' : 'rotate(0deg)' }}
+          />
+        </div>
       </div>
 
-      {/* Full-Width Contact Grid */}
       <div className="flex flex-col md:flex-row items-center w-full sm:gap-48 gap-10 mt-6">
         <div className="contactGrid-container sm:w-full">
           <img
@@ -37,8 +40,15 @@ const Contact = () => {
 
           <div className="space-y-2 text-center">
             <p className="grid-subtext">Contact me</p>
-            <div className="copy-container flex items-center justify-center gap-2 cursor-pointer" onClick={handleCopy}>
-              <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
+            <div
+              className="copy-container flex items-center justify-center gap-2 cursor-pointer"
+              onClick={handleCopy}
+            >
+              <img
+                src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'}
+                alt="copy"
+                className="w-7 h-7"
+              />
               <p className="lg:text-2xl md:text-xl text-xl text-gray_gradient text-white">
                 adrian@jsmastery.pro
               </p>

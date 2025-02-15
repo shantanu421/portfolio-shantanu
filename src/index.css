@@ -48,7 +48,6 @@ body {
     @apply text-lg md:text-[18px] flex items-center gap-1 hover:text-white transition-colors;
   }
 
-  /* GitHub button styles */
 .github-button {
   display: flex;
   align-items: center;
@@ -162,28 +161,25 @@ body {
   }
 
 
- /* Common styles for logos */
+ /* logos */
 .logo {
   position: absolute;
   opacity: 0;
   animation: fadeIn 3s forwards ease-in-out, glow 3s infinite alternate ease-in-out;
 }
 
-/* React logo */
 .react-glowing-logo {
   margin-left: -80px;
   margin-top: -430px;
   animation-delay: 3s, 3s;
 }
 
-/* Node.js logo */
 .node-glowing-logo {
   margin-left: 100px;
   margin-top: -160px;
   animation-delay: 6s, 6s;
 }
 
-/* Express logo */
 .express-glowing-logo {
   margin-left: 1270px;
   margin-top: -450px;
@@ -191,14 +187,12 @@ body {
   width: 100px;
 }
 
-/* MongoDB logo */
 .mongo-glowing-logo {
   margin-left: 1050px;
   margin-top: -170px;
   animation-delay: 12s, 12s;
 }
 
-/* Glow effect */
 @keyframes glow {
   0% {
       filter: drop-shadow(0 0 5px #61dafb);
@@ -208,7 +202,6 @@ body {
   }
 }
 
-/* Fade-in effect */
 @keyframes fadeIn {
   0% {
       opacity: 0;
@@ -232,12 +225,11 @@ body {
 
   
 
-  /* hero section */
+  /* hero */
   .hero_tag {
     @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
   }
 
-  /* Smoother animations for hero section */
 .hero_tag span {
   transition: color 0.6s ease-in-out, text-shadow 0.6s ease-in-out;
 }
@@ -247,14 +239,11 @@ body {
 }
 
 
-  /* about section */
+  /* about */
   .grid-container {
-    @apply w-full h-full border border-black-300 bg-black-300 bg-opacity-55 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full  bg-black-300 bg-opacity-55 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
 }
 
-.contactGrid-container {
-  @apply w-[450px] h-full bg-black-300 bg-opacity-25 rounded-xl sm:p-7 p-4 flex flex-col;
-}
 
 
   .grid-headtext {
@@ -271,7 +260,7 @@ body {
     pointer-events: auto;;
   }
 
-  /* projects section  */
+  /* projects  */
   .arrow-btn {
     @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full arrow-gradient;
   }
@@ -281,65 +270,40 @@ body {
   }
 
   
-  /*  work experience section */
+  /*  work experience */
   .work-container {
-    @apply grid lg:grid-cols-3 grid-cols-1 gap-5 mt-12;
-  }
-
-  .work-canvas {
-    @apply col-span-1 rounded-lg bg-black-200 border border-black-300;
+    @apply grid lg:grid-cols-3 grid-cols-1 gap-5 mt-12 ;
   }
 
   .work-content {
-    @apply col-span-2 rounded-lg bg-black-200 border border-black-300;
+    @apply col-span-2 rounded-lg bg-opacity-25;
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-slate-950 rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
-    @apply rounded-3xl w-16 h-16 p-2 bg-black-600;
+    @apply rounded-3xl w-16 h-16 p-2 bg-black-600 opacity-75 group-hover:opacity-95 transition-all ease-in-out duration-500 ;
   }
 
   .work-content_bar {
-    @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-500 group-last:hidden;
+    @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-500 transition-all ease-in-out duration-500;
   }
 
-  /* contact section */
-  .contact-container {
-    @apply max-w-xl relative z-10 sm:px-10 px-5 mt-12;
-  }
-
-  .field-label {
-    @apply text-lg text-white-600;
-  }
-
-  .field-input {
-    @apply w-full bg-black-300 px-5 py-2 min-h-14 rounded-lg placeholder:text-white-500 text-lg text-white-800 shadow-black-200 shadow-2xl focus:outline-none;
-  }
-
-  .field-btn {
-    @apply bg-black-500 px-5 py-2 min-h-12 rounded-lg shadow-black-200 shadow-2xl flex justify-center items-center text-lg text-white gap-3;
-  }
-
-  .field-btn_arrow {
-    @apply w-2.5 h-2.5 object-contain invert brightness-0;
-  }
-
+ 
   /*  footer */
   .social-icon {
     @apply w-12 h-12 rounded-full flex justify-center items-center bg-black-300 border border-black-200;
   }
 }
 
-.waving-hand {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
+/* contact  */
+.contactGrid-container {
+  @apply w-[450px] h-full  bg-opacity-25 rounded-xl sm:p-7 p-4 flex flex-col;
 }
+
+
 
 .arrow-gradient {
   background-image: linear-gradient(
@@ -351,29 +315,3 @@ body {
   );
 }
 
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  15% {
-    transform: rotate(14deg);
-  }
-  30% {
-    transform: rotate(-8deg);
-  }
-  40% {
-    transform: rotate(14deg);
-  }
-  50% {
-    transform: rotate(-4deg);
-  }
-  60% {
-    transform: rotate(10deg);
-  }
-  70% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
