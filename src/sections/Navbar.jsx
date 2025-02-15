@@ -42,7 +42,7 @@ const Navbar = () => {
 
     useEffect(() => {
       const handleScroll = () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 30) {
           setScrolled(true);
         } else {
           setScrolled(false);
@@ -55,8 +55,8 @@ const Navbar = () => {
     }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 
-      ${scrolled ? "bg-black-200 shadow-md opacity-95" : "bg-transparent"}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 
+      ${scrolled ? "bg-black-200 shadow-lg opacity-95 transition-all duration-200 ease-out" : "bg-transparent"}`}>
       
         <div className="max-w-7xl mx-auto">
             

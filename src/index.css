@@ -169,29 +169,21 @@ body {
 }
 
 .react-glowing-logo {
-  margin-left: -80px;
-  margin-top: -430px;
-  animation-delay: 3s, 3s;
+  @apply ml-[-80px] mt-[-430px] [animation-delay:3s,3s];
 }
 
 .node-glowing-logo {
-  margin-left: 100px;
-  margin-top: -160px;
-  animation-delay: 6s, 6s;
+  @apply ml-[100px] mt-[-160px] [animation-delay:6s,6s];
 }
 
 .express-glowing-logo {
-  margin-left: 1270px;
-  margin-top: -450px;
-  animation-delay: 9s, 9s;
-  width: 100px;
+  @apply sm:ml-[1270px] ml-[20px] mt-[-450px] w-[100px] [animation-delay:9s,9s];
 }
 
 .mongo-glowing-logo {
-  margin-left: 1050px;
-  margin-top: -170px;
-  animation-delay: 12s, 12s;
+  @apply sm:ml-[1050px] ml-[400px] mt-[-170px] [animation-delay:12s,12s];
 }
+
 
 @keyframes glow {
   0% {
@@ -272,7 +264,7 @@ body {
   
   /*  work experience */
   .work-container {
-    @apply grid lg:grid-cols-3 grid-cols-1 gap-5 mt-12 ;
+    @apply grid lg:grid-cols-2 grid-cols-1 gap-5 mt-7 ;
   }
 
   .work-content {
@@ -280,7 +272,7 @@ body {
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-slate-950 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-slate-950 rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
