@@ -20,9 +20,9 @@ export const navLinks = [
   },
   {
     id: 4,
-    name: "Contact",
-    href: "#contact",
-    icon: '/logos/contact.svg'
+    name: "Experience",
+    href: "#experience",
+    icon: '/logos/exp.svg'
   },
   {
     id: 5,
