@@ -27,25 +27,46 @@ const About = () => {
         </div>
 
         <div className="col-span-2 row-span-1">
-  <div className="grid-container flex flex-col items-center gap-6">
+  <div className="grid-container flex flex-col items-center">
     {/* Technologies Section */}
-    <div className="flex flex-col items-center gap-10 ">
-      <h2 className="text-2xl font-semibold text-white">Technologies/Frameworks I work with</h2>
-      <div className="flex gap-6 mt-4">
-        <img src="/other-logos/html2.svg" alt="Html" className="w-12 h-12 shadow-red-400 shadow-lg" />
-        <img src="/other-logos/html2.svg" alt="Express.js" className="w-12 h-12" />
-        <img src="/other-logos/html2.svg" alt="React.js" className="w-12 h-12" />
-        <img src="/other-logos/html2.svg" alt="Node.js" className="w-12 h-12" />
+    <div className="flex flex-col items-center gap-10">
+      <h2 className="sm:text-2xl text-xl font-semibold text-white">
+        Technologies & Frameworks I work with
+      </h2>
+      <div className="grid grid-cols-6 gap-10">
+
+      <img src="/other-logos/html.svg" alt="Html" className="w-12 h-12 sm:w-14 sm:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/css.svg" alt="Css" className="w-12 h-12 sm:w-14 sm:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/js.svg" alt="Js" className="w-12 h-12 sm:w-14 sm:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/react.svg" alt="ReactJs" className="w-12 h-12 sm:w-14 sm:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/tailwind.svg" alt="tailwind" className="w-12 h-12 sm:w-16 sm:h-16 opacity-75 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/node.svg" alt="NodeJs" className="w-12 h-12 sm:w-16 sm:h-16 opacity-65 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/express.svg" alt="ExpressJs" className="w-12 h-12 sm:w-20 sm:h-14 opacity-55 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/mongodb.svg" alt="MongoDb" className="w-12 h-12 sm:w-16 sm:h-14 opacity-65 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/postgresql.svg" alt="PostgreSql" className="w-12 h-12 sm:w-14 sm:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/git.svg" alt="Git" className="w-12 h-12 sm:w-14 sm:h-14 opacity-65 hover:opacity-100 transition-opacity duration-300" />
+
+
+
       </div>
     </div>
 
     {/* Tools Section */}
-    <div className="flex flex-col items-center gap-2 mt-32">
-      <h2 className="text-xl font-semibold text-white">Tools I Use</h2>
-      <div className="flex gap-6 mt-4">
-        <img src="/other-logos/html.svg" alt="VSCode" className="w-12 h-12" />
-        <img src="/other-logos/html.svg" alt="Postman" className="w-12 h-12" />
-        <img src="/other-logos/html.svg" alt="Git" className="w-12 h-12" />
+    <div className="flex flex-col items-center gap-10 mt-9">
+      <h2 className="sm:text-2xl text-xl font-semibold text-white">Tools I use</h2>
+      <div className="grid grid-cols-5 gap-10">
+        <img src="/other-logos/vscode.svg" alt="VSCode" className="w-12 h-12" />
+        <img src="/other-logos/postman.svg" alt="Postman" className="w-12 h-12" />
+        <img src="/other-logos/git.svg" alt="Git" className="w-12 h-12" />
       </div>
     </div>
   </div>
