@@ -63,10 +63,16 @@ const About = () => {
     {/* Tools Section */}
     <div className="flex flex-col items-center gap-10 mt-9">
       <h2 className="sm:text-2xl text-xl font-semibold text-white">Tools I use</h2>
-      <div className="grid grid-cols-5 gap-10">
-        <img src="/other-logos/vscode.svg" alt="VSCode" className="w-12 h-12" />
-        <img src="/other-logos/postman.svg" alt="Postman" className="w-12 h-12" />
-        <img src="/other-logos/git.svg" alt="Git" className="w-12 h-12" />
+      <div className="grid grid-cols-4 gap-16">
+
+      <img src="/other-logos/vscode.svg" alt="VScode" className="w-8 h-8 sm:w-16 sm:h-14 opacity-65 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/postman.svg" alt="Postman" className="w-8 h-8 sm:w-14 sm:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/vercel.svg" alt="Git" className="w-8 h-8 sm:w-14 sm:h-14 opacity-50 hover:opacity-100 transition-opacity duration-300" />
+
+      <img src="/other-logos/cloudinary.svg" alt="Postman" className="w-8 h-8 sm:w-14 sm:h-14 opacity-60 hover:opacity-100 transition-opacity duration-300" />
+
       </div>
     </div>
   </div>
