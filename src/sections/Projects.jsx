@@ -24,22 +24,33 @@ const Projects = () => {
   };
 
   useGSAP(() => {
-    gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' });
+    gsap.fromTo(
+      `.animatedText`,
+      { opacity: 0 },
+      { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' }
+    );
   }, [selectedProjectIndex]);
 
   const currentProject = myProjects[selectedProjectIndex];
 
   return (
-    <section className="c-space my-20" id='projects'>
-      <p className="head-text">My Selected Work</p>
+    <section className="c-space my-20" id="projects">
+      <p className="head-text">My Recent Works</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
           <div className="absolute top-0 right-0">
-            <img src={currentProject.spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
+            <img
+              src={currentProject.spotlight}
+              alt="spotlight"
+              className="w-full h-96 object-cover rounded-xl"
+            />
           </div>
 
-          <div className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg" style={currentProject.logoStyle}>
+          <div
+            className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg"
+            style={currentProject.logoStyle}
+          >
             <img className="w-10 h-10 shadow-sm" src={currentProject.logo} alt="logo" />
           </div>
 
@@ -59,14 +70,36 @@ const Projects = () => {
               ))}
             </div>
 
-            <a
-              className="flex items-center gap-2 cursor-pointer text-white-600"
-              href={currentProject.href}
-              target="_blank"
-              rel="noreferrer">
-              <p>Check Live Site</p>
-              <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
-            </a>
+            <div className="flex items-center gap-7 mt-1">
+              <a
+                href="https://github.com/shantanu421"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white-600 opacity-90 hover:brightness-125 transition-all hover:opacity-100 duration-300"
+              >
+                <p>GitHub</p>
+                <img
+                  src="/other-logos/github.svg"
+                  alt="GitHub"
+                  className="w-5 h-5 opacity-60"
+                />
+              </a>
+
+              <a
+                className="flex items-center gap-2 cursor-pointer text-white-600 opacity-90 hover:opacity-100 hover:brightness-125 transition-all duration-300"
+                href={currentProject.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p>Check Demo</p>
+                <img
+                  src="/assets/arrow-up.png"
+                  alt="arrow"
+                  className="w-3 h-3 opacity-70"
+                />
+              </a>
+            </div>
+
           </div>
 
           <div className="flex justify-between items-center mt-7">
@@ -80,7 +113,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className=" bg-slate-900 bg-opacity-25 rounded-lg h-96 md:h-full">
+        <div className="bg-slate-900 bg-opacity-25 rounded-lg h-96 md:h-full">
           <Canvas>
             <ambientLight intensity={1.5} />
             <directionalLight position={[10, 10, 5]} />
