@@ -27,7 +27,7 @@ const About = () => {
         </div>
 
         <div className="col-span-2 row-span-1">
-  <div className="grid-container flex flex-col items-center">
+  <div className="grid-container">
     {/* Technologies Section */}
     <div className="flex flex-col items-center gap-10">
       <h2 className="sm:text-2xl text-xl font-semibold text-white">
@@ -79,31 +79,16 @@ const About = () => {
 </div>
 
 
-        {/* Second row: 2 : 1 */}
+       
+
+
         <div className="col-span-2 row-span-1">
           <div className="grid-container">
-            <img
-              src="/assets/grid3.png"
-              alt="grid-3"
-              className="w-full sm:h-[220px] h-fit object-contain"
-            />
-            <div>
-              <p className="grid-headtext">Passion Lorem, ipsum.</p>
-              <p className="grid-subtext">
-                Passion Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Quaerat exercitationem autem odit.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-span-1 row-span-1">
-          <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[220px] h-fit flex justify-center items-center">
-              {/* 3D globe thing */}
             </div>
+
             <div>
-              <p className="grid-headtext">I work Lorem ipsum dolor sit.</p>
+              <p className="grid-headtext">Passion lor sit.</p>
               <p className="grid-subtext">
                 Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum
                 dolor sit. lor
@@ -112,6 +97,38 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        <div className="col-span-1 row-span-1 grid-container flex flex-col items-center justify-center">
+  <div className="text-center grid gap-9 ">
+    <img src="/other-logos/connect.svg" alt="Connect" className="w-10 h-10 sm:w-16 sm:h-16 place-self-center opacity-55 hover:opacity-100 transition-opacity duration-300" />
+    <p className="text-2xl font-semibold text-white">Connect With Me</p>
+    <p className="text-lg text-gray-300 mt-2">
+      Feel free to DM or reach out to me from the below platforms
+    </p>
+
+    {/* Social Media Icons */}
+    <div className="flex justify-center gap-12 mt-4">
+      
+      <a href="https://www.linkedin.com/in/shantanusaraf/" target="_blank" rel="noopener noreferrer">
+        <img src="/other-logos/linkedin.svg" alt="LinkedIn" className="w-9 h-9 opacity-70 hover:opacity-100 transition-opacity duration-300" />
+      </a>
+
+      <a href="https://x.com/shantanu_saraf" target="_blank" rel="noopener noreferrer">
+        <img src="/other-logos/twitter.svg" alt="Twitter" className="w-8 h-9 opacity-70 hover:opacity-100 transition-opacity duration-300" />
+      </a>
+      
+      <a href="https://github.com/shantanu421" target="_blank" rel="noopener noreferrer">
+        <img src="/other-logos/github.svg" alt="GitHub" className="w-8 h-9 opacity-70 hover:opacity-100 transition-opacity duration-300" />
+      </a>
+
+      <a href="https://stackoverflow.com/users/19492017/shantanu" target="_blank" rel="noopener noreferrer">
+        <img src="/other-logos/stackoverflow.svg" alt="Stackoverflow" className="w-8 h-9 opacity-70 hover:opacity-100 transition-opacity duration-300" />
+      </a>
+
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );

@@ -41,7 +41,7 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 font-[500]  hover:text-white font-generalsans max-sm:hover:bg-black-200  max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply text-neutral-400 font-[500]  hover:text-white font-generalsans max-sm:hover:bg-black-200  max-sm:w-full max-sm:rounded-md py-1 max-sm:px-5;
   }
 
   .nav-li_a {
