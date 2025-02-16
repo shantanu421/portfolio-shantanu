@@ -41,7 +41,7 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 font-[500]  hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply text-neutral-400 font-[500]  hover:text-white font-generalsans max-sm:hover:bg-slate-900  max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
   }
 
   .nav-li_a {
@@ -78,7 +78,7 @@ body {
 }
 
   .nav-sidebar {
-    @apply absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+    @apply absolute left-0 right-0 bg-slate-950 bg-opacity-75 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
   }
 
   .text-gray_gradient {
@@ -233,7 +233,7 @@ body {
 
   /* about */
   .grid-container {
-    @apply w-full h-full  bg-black-300 bg-opacity-55 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full  bg-slate-900 bg-opacity-35 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
 }
 
 

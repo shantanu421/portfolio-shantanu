@@ -12,24 +12,8 @@ const HackerRoom = (props) => {
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, -Math.PI / 2]}>
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes['Object_782_OnTheFly-bg_0'].geometry}
-            material={materials['Material.074_40']}
-            position={[101.601, 40.622, 244.007]}
-            rotation={[-Math.PI / 2, 0.078, Math.PI / 2]}
-            scale={21.893}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Object_788_Material057_0.geometry}
-            material={materials['Material.074_33']}
-            position={[159.018, 47.32, 359.936]}
-            rotation={[-Math.PI / 2, 0, -Math.PI]}
-            scale={19.608}
-          />
+         
+
           <mesh
             castShadow
             receiveShadow
@@ -2568,24 +2552,6 @@ const HackerRoom = (props) => {
 
           </mesh >
 
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes['gigabyte-logo_gigabyte-logo_0'].geometry}
-            material={materials['Material.074_31']}
-            position={[-161.543, 449.447, 82.082]}
-            rotation={[1.571, -1.501, 1.571]}
-            scale={23.689}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes['gigabyte-logo001_gigabyte-logo_0'].geometry}
-            material={materials['Material.074_31']}
-            position={[-122.059, 122.824, 301.598]}
-            rotation={[-Math.PI / 2, 1.501, Math.PI / 2]}
-            scale={17.84}
-          />
           <mesh
             castShadow
             receiveShadow

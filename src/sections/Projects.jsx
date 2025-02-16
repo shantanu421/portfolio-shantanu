@@ -82,7 +82,7 @@ const Projects = () => {
 
         <div className=" bg-slate-900 bg-opacity-25 rounded-lg h-96 md:h-full">
           <Canvas>
-            <ambientLight intensity={Math.PI} />
+            <ambientLight intensity={1.5} />
             <directionalLight position={[10, 10, 5]} />
             <Center>
               <Suspense fallback={<CanvasLoader />}>
