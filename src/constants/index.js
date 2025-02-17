@@ -33,18 +33,14 @@ export const navLinks = [
 
 export const myProjects = [
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+    title: "Visual Converse Plus",
+    desc: "A SaaS platform where users can generate dynamic content using AI tools like Image generation AI, Video generation AI, Code generation AI, Music generation AI, and Conversation AI. To generate unlimited content, a subscription model feature is implemented using Stripe.",
     subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-    href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
+      "This AI platform is built with Next.js, Tailwind CSS, and React.js. Prisma is used as a ORM to handle the data of user subscription and Api limit count",
+    href: "https://visual-converse-plus.vercel.app/",
+    githubHref: "https://github.com/shantanu421/visual-converse-plus.git",
     texture: "/textures/project/project1.png",
     logo: "/assets/project-logo1.png",
-    logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
-    },
     spotlight: "/assets/spotlight1.png",
     tags: [
       {
@@ -54,18 +50,18 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        name: "Next.js",
+        path: "assets/nextjs.svg",
       },
       {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
+        name: "TailwindCSS",
+        path: "/assets/tailwindcss.png",
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Prisma",
+        path: "/assets/prisma.svg",
       },
     ],
   },
@@ -86,23 +82,23 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "Reacts.js",
+        path: "/assets/reacts.svg",
       },
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        name: "TailwindCSSs",
+        path: "assets/tailwindcsss.png",
       },
       {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
+        name: "TypeScripts",
+        path: "/assets/typescripts.png",
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Framer Motions",
+        path: "/assets/framers.png",
       },
     ],
   },

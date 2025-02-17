@@ -92,13 +92,13 @@ body {
   }
 
   .glow-on-hover {
-    width: 220px;
+    width: 290px;
     height: 50px;
     border: none;
     outline: none;
     color: #fff;
     font-weight: 600;
-    background: #111;
+    background: #020617; /* Slate-950 */
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -140,11 +140,13 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, #1a1a3a 0%, #1a1a1a 51%, #1a3a2a  100%);
+    background-image: linear-gradient(to right, #020617 0%, #081342 51%, #020617  100%);
     left: 0;
     top: 0;
     border-radius: 10px;
 }
+
+
 
 
 @keyframes glowing {
@@ -259,7 +261,7 @@ body {
   }
 
   .tech-logo {
-    @apply w-10 h-10 rounded-md p-2 bg-neutral-100 bg-opacity-10 backdrop-filter backdrop-blur-lg flex justify-center items-center;
+    @apply w-10 h-10 rounded-md p-2 bg-slate-800 bg-opacity-35 backdrop-filter backdrop-blur-lg flex justify-center items-center;
   }
 
   

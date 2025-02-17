@@ -87,7 +87,7 @@ const About = () => {
   <div className="text-center mb-24">
 
     <p className="text-2xl font-semibold text-white">
-      Apart from coding, I love to pursue my other passions, like
+      Apart from coding ,  I love to pursue my other passions ,  like
     </p>
 
   </div>

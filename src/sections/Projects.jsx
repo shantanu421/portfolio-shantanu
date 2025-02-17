@@ -38,7 +38,7 @@ const Projects = () => {
       <p className="head-text">My Recent Works</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-        <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
+        <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5  bg-slate-900 bg-opacity-35 shadow-2xl shadow-black-200">
           <div className="absolute top-0 right-0">
             <img
               src={currentProject.spotlight}
@@ -48,8 +48,7 @@ const Projects = () => {
           </div>
 
           <div
-            className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg"
-            style={currentProject.logoStyle}
+            className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg opacity-75"
           >
             <img className="w-10 h-10 shadow-sm" src={currentProject.logo} alt="logo" />
           </div>
@@ -72,10 +71,10 @@ const Projects = () => {
 
             <div className="flex items-center gap-7 mt-1">
               <a
-                href="https://github.com/shantanu421"
+                href={currentProject.githubHref}
                 target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-white-600 opacity-90 hover:brightness-125 transition-all hover:opacity-100 duration-300"
+                rel="noreferrer"
+                className="will-change-transform flex items-center gap-2 text-white-600 opacity-90 hover:brightness-125 transition-all hover:opacity-100 duration-300"
               >
                 <p>GitHub</p>
                 <img
@@ -86,7 +85,9 @@ const Projects = () => {
               </a>
 
               <a
-                className="flex items-center gap-2 cursor-pointer text-white-600 opacity-90 hover:opacity-100 hover:brightness-125 transition-all duration-300"
+                 className="will-change-transform flex items-center gap-2 cursor-pointer 
+                 text-white-600 opacity-90 hover:opacity-100 
+                 hover:brightness-125 transition-all duration-300"
                 href={currentProject.href}
                 target="_blank"
                 rel="noreferrer"
@@ -115,11 +116,14 @@ const Projects = () => {
 
         <div className="bg-slate-900 bg-opacity-25 rounded-lg h-96 md:h-full">
           <Canvas>
+         
             <ambientLight intensity={1.5} />
-            <directionalLight position={[10, 10, 5]} />
+            
+            <directionalLight position={[100, 0, 10]} />
             <Center>
               <Suspense fallback={<CanvasLoader />}>
                 <group scale={1.5} position={[4.5, -4, 0]} rotation={[0, 0, 0]}>
+
                   <DemoComputer texture={currentProject.texture} />
                 </group>
               </Suspense>

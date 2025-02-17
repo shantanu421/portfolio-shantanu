@@ -7,7 +7,7 @@ const HackerRoom = (props) => {
   const { nodes, materials } = useGLTF('/models/programmer.glb')
 
   const txt = useTexture( props.texture ? props.texture : 'textures/project/project1.png')
-
+  
 
   return (
     <group {...props} dispose={null}>
@@ -2565,6 +2565,7 @@ const HackerRoom = (props) => {
             rotation={[-Math.PI / 2, 1.501, Math.PI / 2]}
             scale={[331.621, 348.065, 331.621]}
           >
+             
              <meshStandardMaterial map={txt} />
 
           </mesh >
