@@ -126,19 +126,19 @@ const About = () => {
     {/* Social Media Icons */}
     <div className="flex justify-center gap-12 mt-4">
       
-      <a href="https://www.linkedin.com/in/shantanusaraf/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/shantanusaraf/" target="_blank" rel=" noreferrer">
         <img src="/other-logos/linkedin.svg" alt="LinkedIn" className="w-9 h-9 opacity-70 hover:opacity-100 transition-opacity duration-300" />
       </a>
 
-      <a href="https://x.com/shantanu_saraf" target="_blank" rel="noopener noreferrer">
-        <img src="/other-logos/twitter.svg" alt="Twitter" className="w-8 h-9 opacity-70 hover:opacity-100 transition-opacity duration-300" />
+      <a href="https://x.com/shantanu_saraf" target="_blank" rel=" noreferrer">
+        <img src="/other-logos/twitter.svg" alt="Twitter" className="w-8 h-9 opacity-70 hover:opacity-100 transition-opacity duration-300 " />
       </a>
       
-      <a href="https://github.com/shantanu421" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/shantanu421" target="_blank" rel=" noreferrer">
         <img src="/other-logos/github.svg" alt="GitHub" className="w-8 h-9 opacity-70 hover:opacity-100 transition-opacity duration-300" />
       </a>
 
-      <a href="https://stackoverflow.com/users/19492017/shantanu" target="_blank" rel="noopener noreferrer">
+      <a href="https://stackoverflow.com/users/19492017/shantanu" target="_blank" rel=" noreferrer">
         <img src="/other-logos/stackoverflow.svg" alt="Stackoverflow" className="w-8 h-9 opacity-70 hover:opacity-100 transition-opacity duration-300" />
       </a>
 
