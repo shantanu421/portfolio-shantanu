@@ -246,7 +246,7 @@ body {
   }
 
   .grid-subtext {
-    @apply text-[#afb0b6] text-base font-generalsans;
+    @apply  text-base font-generalsans;
   }
 
   .copy-container {
@@ -279,7 +279,7 @@ body {
   }
 
   .work-content_logo {
-    @apply rounded-3xl w-16 h-16 p-2 bg-black-600 opacity-75 group-hover:opacity-95 transition-all ease-in-out duration-500 cursor-pointer;
+    @apply rounded-3xl w-14 h-14 p-2 bg-black-600 opacity-75 group-hover:opacity-95 transition-all ease-in-out duration-500 cursor-pointer;
   }
 
   .work-content_bar {

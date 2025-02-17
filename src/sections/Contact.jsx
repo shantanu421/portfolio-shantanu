@@ -24,7 +24,7 @@ const Contact = () => {
           <img
             src="assets/email1.svg"
             alt="Email Icon"
-            className="absolute top-0 left-0 w-full h-full object-contain transition-transform duration-500"
+            className="absolute top-0 left-0 w-full h-full object-contain transition-transform duration-500 opacity-70"
             style={{ transform: hasCopied ? 'rotate(180deg)' : 'rotate(0deg)' }}
           />
         </div>
@@ -39,7 +39,7 @@ const Contact = () => {
           />
 
           <div className="space-y-2 text-center">
-            <p className="grid-subtext">Contact me</p>
+            <p className="grid-subtext sm:text-xl text-slate-500">Hire me today and let us commence the process of achieving amazing things!</p>
             <div
               className="copy-container flex items-center justify-center gap-2 cursor-pointer"
               onClick={handleCopy}
@@ -50,7 +50,7 @@ const Contact = () => {
                 className="w-7 h-7"
               />
               <p className="lg:text-2xl md:text-xl text-xl text-gray_gradient text-white">
-                adrian@jsmastery.pro
+                shantanusaraf4@gmail.com
               </p>
             </div>
           </div>
