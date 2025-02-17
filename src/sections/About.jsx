@@ -96,19 +96,19 @@ const About = () => {
   <div className="grid grid-cols-3 gap-20">
     {/* Hobby 1 */}
     <div className="flex flex-col items-center">
-      <img src="/other-logos/space.png" alt="Space" className="w-36 h-36 opacity-50 hover:opacity-75 transition-opacity duration-300" />
+      <img src="/other-logos/space.png" alt="Space" className="sm:w-36 sm:h-36 w-24 h-24 opacity-50 hover:opacity-75 transition-opacity duration-300" />
       <p className="text-white mt-2 text-center">Space Exploration</p>
     </div>
 
     {/* Hobby 2 */}
     <div className="flex flex-col items-center">
-      <img src="/other-logos/football.png" alt="Football" className="w-36 h-36 opacity-50 hover:opacity-70 transition-opacity duration-300" />
+      <img src="/other-logos/football.png" alt="Football" className="sm:w-36 sm:h-36 w-24 h-24 opacity-50 hover:opacity-70 transition-opacity duration-300" />
       <p className="text-white mt-2 text-center">Playing Football</p>
     </div>
 
     {/* Hobby 3 */}
     <div className="flex flex-col items-center">
-      <img src="/other-logos/writing.png" alt="Writing" className="w-36 h-36 opacity-45 hover:opacity-65 transition-opacity duration-300" />
+      <img src="/other-logos/writing.png" alt="Writing" className="sm:w-36 sm:h-36 w-24 h-24 opacity-45 hover:opacity-65 transition-opacity duration-300" />
       <p className="text-white mt-2 text-center">Writing</p>
     </div>
   </div>
