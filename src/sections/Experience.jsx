@@ -22,9 +22,9 @@ const WorkExperience = () => {
                   key={index}
                   className="work-content_container group">
                   <div className="flex flex-col h-full justify-start items-center py-2">
-                    <div className="work-content_logo">
+                    <a className="work-content_logo" href={item.href} target="_blank" rel="noreferrer">
                       <img className="w-full h-full" src={item.icon} alt="" />
-                    </div>
+                    </a>
 
                     <div className="work-content_bar" />
                   </div>

@@ -275,11 +275,11 @@ body {
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-slate-950 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] gap-5  transition-all ease-in-out duration-500 hover:bg-slate-950 rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
-    @apply rounded-3xl w-16 h-16 p-2 bg-black-600 opacity-75 group-hover:opacity-95 transition-all ease-in-out duration-500 ;
+    @apply rounded-3xl w-16 h-16 p-2 bg-black-600 opacity-75 group-hover:opacity-95 transition-all ease-in-out duration-500 cursor-pointer;
   }
 
   .work-content_bar {
