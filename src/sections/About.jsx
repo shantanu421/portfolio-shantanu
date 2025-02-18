@@ -13,9 +13,9 @@ const About = () => {
         <div className="col-span-1 row-span-1 ">
           <div className="grid-container bg-transparent">
             <img
-              src="/assets/grid1.png"
+              src="/assets/pfpx.png"
               alt="grid-1"
-              className="w-full sm:h-[200px] h-fit object-contain"
+              className="w-full sm:h-[200px] h-52 object-contain brightness-75 opacity-80"
             />
             <div>
               <p className="grid-headtext">Hi, I'm <span className="text-blue-300">Shantanu </span></p>

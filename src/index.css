@@ -266,6 +266,9 @@ body {
   .grid-container {
     @apply w-full h-full  bg-slate-900 bg-opacity-35 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
 }
+  /* .grid-container2 {
+    @apply w-full h-full  bg-slate-900 bg-opacity-35 rounded-lg sm:p-7 p-9 flex flex-col gap-5 justify-center;
+} */
 
 
 
