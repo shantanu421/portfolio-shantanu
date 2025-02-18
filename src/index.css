@@ -8,27 +8,23 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom Scrollbar for Webkit Browsers */
 ::-webkit-scrollbar {
-  width: 7px; /* Keep it small but responsive */
+  width: 7px; 
 }
 
-/* Track (Background) */
 ::-webkit-scrollbar-track {
-  background: #0f172a; /* slate-900 */
-  border-radius: 4px; /* Slight rounding */
+  background: #0f172a; 
+  border-radius: 8px; 
 }
 
-/* Handle (Thumb) */
 ::-webkit-scrollbar-thumb {
   will-change: transform;
-  background: #0d2958; /* slate-900 */
-  border-radius: 6px;  /* Reduce excessive rounding */
+  background: #0d2958; 
+  border-radius: 8px;  
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0f2f65; /* Slightly lighter for hover */
+  background: #0f2f65; 
 }
 
 
@@ -38,6 +34,7 @@ body {
   font-family: 'General Sans', sans-serif;
   opacity: 0;
   animation: bodyFadeIn 5s ease-in-out forwards;
+  
 }
 
 @keyframes bodyFadeIn {
