@@ -18,9 +18,9 @@ const About = () => {
               className="w-full sm:h-[200px] h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">Hi, I'm Shantanu</p>
+              <p className="grid-headtext">Hi, I'm <span className="text-blue-300">Shantanu </span></p>
               <p className="grid-subtext">
-              I love to design and develop Frontend and Backend. Being a Fullstack developer, I think it's a beautiful combination of creativity and logic. I'm a fresher and really looking forward to working with the company, building impactful features for the products that will make a drastic impact on the company's profit.
+              I love to design and develop Frontend and Backend. Being a <span className="text-blue-300">Fullstack developer</span>, I think it's a beautiful combination of creativity and logic. As a fresher, I am eagerly looking forward to working professionally and creating <span className="text-blue-300">impactful features</span> for the products that will significantly increase the <span className="text-blue-300">company's profit</span>.
               </p>
             </div>
           </div>
@@ -30,7 +30,7 @@ const About = () => {
   <div className="grid-container">
     {/* Technologies Section */}
     <div className="flex flex-col items-center gap-10">
-      <h2 className="sm:text-2xl text-xl font-semibold text-white">
+      <h2 className="sm:text-2xl text-xl font-semibold text-green-200">
         Technologies & Frameworks I work with
       </h2>
       <div className="grid grid-cols-6 gap-10">
@@ -62,7 +62,7 @@ const About = () => {
 
     {/* Tools Section */}
     <div className="flex flex-col items-center gap-10 mt-9">
-      <h2 className="sm:text-2xl text-xl font-semibold text-white">Tools I use</h2>
+      <h2 className="sm:text-2xl text-xl font-semibold text-green-200">Tools I use</h2>
       <div className="grid grid-cols-4 gap-16">
 
       <img src="/other-logos/vscode.svg" alt="VScode" className="w-8 h-8 sm:w-16 sm:h-14 opacity-65 hover:opacity-100 transition-opacity duration-300" />
@@ -86,8 +86,8 @@ const About = () => {
   {/* Title & Subtitle */}
   <div className="text-center mb-24">
 
-    <p className="text-2xl font-semibold text-white">
-      Apart from coding ,  I love to pursue my other passions ,  like
+    <p className="text-2xl font-semibold text-blue-200">
+      Apart from Coding ,  I Love to pursue my other Passions ,  like
     </p>
 
   </div>
@@ -97,19 +97,19 @@ const About = () => {
     {/* Hobby 1 */}
     <div className="flex flex-col items-center">
       <img src="/other-logos/space.png" alt="Space" className="sm:w-36 sm:h-36 w-24 h-24 opacity-50 hover:opacity-75 transition-opacity duration-300" />
-      <p className="text-white mt-2 text-center">Space Exploration</p>
+      <p className="text-slate-300 mt-2 text-center">Space Exploration</p>
     </div>
 
     {/* Hobby 2 */}
     <div className="flex flex-col items-center">
       <img src="/other-logos/football.png" alt="Football" className="sm:w-36 sm:h-36 w-24 h-24 opacity-50 hover:opacity-70 transition-opacity duration-300" />
-      <p className="text-white mt-2 text-center">Playing Football</p>
+      <p className="text-slate-300 mt-2 text-center">Playing Football</p>
     </div>
 
     {/* Hobby 3 */}
     <div className="flex flex-col items-center">
       <img src="/other-logos/writing.png" alt="Writing" className="sm:w-36 sm:h-36 w-24 h-24 opacity-45 hover:opacity-65 transition-opacity duration-300" />
-      <p className="text-white mt-2 text-center">Writing</p>
+      <p className="text-slate-300 mt-2 text-center">Writing</p>
     </div>
   </div>
 </div>
@@ -118,7 +118,7 @@ const About = () => {
         <div className="col-span-1 row-span-1 grid-container flex flex-col items-center justify-center">
   <div className="text-center grid gap-9 ">
     <img src="/other-logos/connect.svg" alt="Connect" className="w-10 h-10 sm:w-16 sm:h-16 place-self-center opacity-55 hover:opacity-100 transition-opacity duration-300" />
-    <p className="text-2xl font-semibold text-white">Connect With Me</p>
+    <p className="text-2xl font-semibold text-blue-200">Connect With Me</p>
     <p className="text-lg text-gray-300 mt-2">
       Feel free to DM or reach out to me from the below platforms
     </p>

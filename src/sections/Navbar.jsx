@@ -62,7 +62,7 @@ const Navbar = () => {
             
             <div className="flex justify-between items-center py-5 mx-auto mt-[-13px] c-space sm:bg-transparent bg-black-100 bg-opacity-85">
 
-                <a href="/" className="text-neutral-400 font-bold text-3xl hover:text-white transition-colors">
+                <a href="/" className="text-blue-300 font-bold text-3xl transition-colors">
                     Ss.
                 </a>
 

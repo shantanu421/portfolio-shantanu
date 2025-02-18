@@ -39,7 +39,7 @@ const Contact = () => {
           />
 
           <div className="space-y-2 text-center">
-            <p className="grid-subtext sm:text-xl text-slate-500">Hire me today and let us commence the process of achieving amazing things!</p>
+            <p className="grid-subtext2 sm:text-xl mb-4">Hire me today and let us commence the process of achieving amazing things!</p>
             <div
               className="copy-container flex items-center justify-center gap-2 cursor-pointer"
               onClick={handleCopy}

@@ -246,7 +246,11 @@ body {
   }
 
   .grid-subtext {
-    @apply  text-base font-generalsans;
+    @apply text-[#afb0b6] text-base font-generalsans;
+  }
+
+  .grid-subtext2 {
+    @apply text-slate-500
   }
 
   .copy-container {
