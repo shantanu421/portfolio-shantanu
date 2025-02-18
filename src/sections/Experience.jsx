@@ -8,7 +8,7 @@ const WorkExperience = () => {
 
       <div className="text-white-600 flex flex-col items-center justify-center ">
 
-        <p className="head-text">My Work Experience</p>
+        <p className="head-text mb-[-20px]">My Work Experience</p>
 
         <div className="work-container ">
           

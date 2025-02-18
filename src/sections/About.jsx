@@ -86,7 +86,7 @@ const About = () => {
   {/* Title & Subtitle */}
   <div className="text-center mb-24">
 
-    <p className="text-2xl font-semibold text-blue-200">
+    <p className="sm:text-2xl text-xl font-semibold sm:mt-0 mt-10 text-blue-200">
       Apart from Coding ,  I Love to pursue my other Passions ,  like
     </p>
 
@@ -97,19 +97,19 @@ const About = () => {
     {/* Hobby 1 */}
     <div className="flex flex-col items-center">
       <img src="/other-logos/space.png" alt="Space" className="sm:w-36 sm:h-36 w-24 h-24 opacity-50 hover:opacity-75 transition-opacity duration-300" />
-      <p className="text-slate-300 mt-2 text-center">Space Exploration</p>
+      <p className="text-slate-300 sm:text-[16px] text-[15px] mt-2 text-center">Space Exploration</p>
     </div>
 
     {/* Hobby 2 */}
     <div className="flex flex-col items-center">
       <img src="/other-logos/football.png" alt="Football" className="sm:w-36 sm:h-36 w-24 h-24 opacity-50 hover:opacity-70 transition-opacity duration-300" />
-      <p className="text-slate-300 mt-2 text-center">Playing Football</p>
+      <p className="text-slate-300 sm:text-[16px] text-[15px] mt-2 text-center">Playing Football</p>
     </div>
 
     {/* Hobby 3 */}
     <div className="flex flex-col items-center">
       <img src="/other-logos/writing.png" alt="Writing" className="sm:w-36 sm:h-36 w-24 h-24 opacity-45 hover:opacity-65 transition-opacity duration-300" />
-      <p className="text-slate-300 mt-2 text-center">Writing</p>
+      <p className="text-slate-300 sm:text-[16px] text-[15px] mt-2 text-center">Writing</p>
     </div>
   </div>
 </div>
@@ -118,8 +118,8 @@ const About = () => {
         <div className="col-span-1 row-span-1 grid-container flex flex-col items-center justify-center">
   <div className="text-center grid gap-9 ">
     <img src="/other-logos/connect.svg" alt="Connect" className="w-10 h-10 sm:w-16 sm:h-16 place-self-center opacity-55 hover:opacity-100 transition-opacity duration-300" />
-    <p className="text-2xl font-semibold text-blue-200">Connect With Me</p>
-    <p className="text-lg text-gray-300 mt-2">
+    <p className="sm:text-2xl text-xl font-semibold text-blue-200">Connect With Me</p>
+    <p className="sm:text-lg text-[16px] text-gray-300 mt-2">
       Feel free to DM or reach out to me from the below platforms
     </p>
 

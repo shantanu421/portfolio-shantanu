@@ -54,7 +54,7 @@ const Projects = () => {
 
   return (
     <section className="c-space my-20" id="projects">
-      <p className="head-text">My Recent Works</p>
+      <p className="head-text mb-[-20px]">My Recent Works</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5  bg-slate-900 bg-opacity-35 shadow-2xl shadow-black-200">
@@ -93,7 +93,7 @@ const Projects = () => {
             </div>
 
             <div
-              className={`flex items-center gap-7 sm:mt-1 sm:mr-5 animatedGitHub animatedCheckDemo ${
+              className={`flex items-center gap-7 sm:mt-1 mt-4 sm:mr-5 animatedGitHub animatedCheckDemo ${
                 currentProject.githubHref ===
                 "https://github.com/shantanu421/vidcore.git"
                   ? "mt-0 mr-[300px]"
