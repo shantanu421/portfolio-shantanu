@@ -4,7 +4,12 @@ import * as THREE from "three";
 const Starfield = () => {
   useEffect(() => {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
     camera.position.z = 5;
 
     const renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -25,9 +30,11 @@ const Starfield = () => {
       const z = (Math.random() - 0.5) * 3000;
       starVertices.push(x, y, z);
     }
-    stars.setAttribute("position", new THREE.Float32BufferAttribute(starVertices, 3));
+    stars.setAttribute(
+      "position",
+      new THREE.Float32BufferAttribute(starVertices, 3)
+    );
 
-    // Load circular texture for points
     const textureLoader = new THREE.TextureLoader();
     const circleTexture = textureLoader.load(
       "https://threejs.org/examples/textures/sprites/circle.png" // Circle sprite
@@ -35,11 +42,11 @@ const Starfield = () => {
 
     const starMaterial = new THREE.PointsMaterial({
       color: 0xffff00,
-      size: 2.5, // Adjusted size for better visibility
+      size: 2.5,
       map: circleTexture,
-      transparent: true, // Ensures smooth blending
-      depthWrite: false, // Prevents depth conflicts
-      sizeAttenuation: true, // Ensures perspective effect
+      transparent: true,
+      depthWrite: false,
+      sizeAttenuation: true,
     });
 
     const starPoints = new THREE.Points(stars, starMaterial);

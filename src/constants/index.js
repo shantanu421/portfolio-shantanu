@@ -3,31 +3,30 @@ export const navLinks = [
     id: 1,
     name: "Home",
     href: "#home",
-    icon: '/logos/home.svg'
+    icon: "/logos/home.svg",
   },
   {
     id: 2,
     name: "About",
     href: "#about",
-    icon: '/logos/about.svg'
-
+    icon: "/logos/about.svg",
   },
   {
     id: 3,
     name: "Projects",
     href: "#projects",
-    icon: '/logos/project.svg'
+    icon: "/logos/project.svg",
   },
   {
     id: 4,
     name: "Experience",
     href: "#experience",
-    icon: '/logos/exp.svg'
+    icon: "/logos/exp.svg",
   },
   {
     id: 5,
     href: "https://github.com/shantanu421/portfolio-shantanu.git",
-    type: "github"
+    type: "github",
   },
 ];
 
@@ -72,7 +71,7 @@ export const myProjects = [
     subdesc:
       "Built with Node.js, Express.js, and MongoDB, following proper industry-grade code practice and efficient data management",
     href: "NA",
-    githubHref:"https://github.com/shantanu421/vidcore.git",
+    githubHref: "https://github.com/shantanu421/vidcore.git",
     texture: "/textures/project/project2.png",
     logo: "/assets/open-source.svg",
     spotlight: "/assets/spotlight4.png",
@@ -99,38 +98,31 @@ export const myProjects = [
     title: "CarePulse",
     desc: "A healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
     subdesc:
-      "CarePulse integrates complex forms and SMS notifications by using Next.js, React.js, and Twilio. Appwrite is used for handling the data of patients records and appointment schedules.",
+      "CarePulse integrates complex forms and SMS notifications by using Next.js,  Appwrite, and Twilio. Appwrite is used for handling the data of patients records and appointment schedules.",
     href: "https://carepulse-healthcare-platform.vercel.app/",
     githubHref: "https://github.com/shantanu421/healthcare_platform.git",
-    
+
     texture: "/textures/project/project3.png",
     logo: "/assets/project-logo3.png",
     spotlight: "/assets/spotlight3.png",
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
         name: "Next.js",
         path: "assets/nextjs.svg",
       },
       {
-        id: 3,
+        id: 2,
         name: "TailwindCSS",
         path: "/assets/tailwindcss.png",
       },
       {
-        id: 4,
+        id: 3,
         name: "Appwrite",
         path: "/assets/appwrite.png",
       },
     ],
   },
- 
-  
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
@@ -149,7 +141,7 @@ export const workExperiences = [
     title:
       "Worked on a full-stack application with Java, Spring Boot and Spring Security enabling role-based access control for employees and admins. Integrated REST APIs for handling complex data sets securely. Governed the backend data management with MySQL",
     href: "https://www.excelr.com/",
-    icon: "/assets/excelr.png"
+    icon: "/assets/excelr.png",
   },
   {
     id: 2,
