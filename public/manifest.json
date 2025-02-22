@@ -1,0 +1,22 @@
+{
+    "name": "Shantanu | Portfolio",
+    "short_name": "Shantanu",
+    "description": "Explore Shantanu's portfolio showcasing web development projects in React, Node.js, and more.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#121212",
+    "icons": [
+      {
+        "src": "/assets/s192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/s512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
