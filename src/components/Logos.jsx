@@ -36,9 +36,9 @@ const ExpressLogo = () => {
 
 const MongoDbLogo = () => {
   return (
-    <div className="logo logo-container sm:w-20 w-10">
+    <div className="logo logo-container sm:w-16 w-10">
       <img
-        src="/logos/mongodb.png"
+        src="/other-logos/mongodb.svg"
         alt="MongoDB Logo"
         className="mongo-glowing-logo"
       />

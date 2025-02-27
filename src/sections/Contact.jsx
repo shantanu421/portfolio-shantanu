@@ -4,7 +4,7 @@ const Contact = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("adrian@jsmastery.pro");
+    navigator.clipboard.writeText("shantanusaraf4@gmail.com");
     setHasCopied(true);
 
     setTimeout(() => {
