@@ -2,6 +2,8 @@
   3D Portfolio Website<br/>
   <a href="https://shantanu-saraf.vercel.app/" target="_blank">shantanu.dev</a>
 </h2>
+
+
 <div align="center">
   <img alt="Demo" src="./Images/readme-img.png" />
 </div>
@@ -13,15 +15,15 @@
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) &nbsp;
 ![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-
-
 </center>
 
 <br/>
 
-This portfolio is inspired by [Adrianhajdin](https://github.com/adrianhajdin).
 
-<br/>
+( This portfolio is inspired by [Adrianhajdin](https://github.com/adrianhajdin) ).
+
+
+
 
 ## Fork It, Own It
 
@@ -59,7 +61,7 @@ Feel free to fork, remix, and make this repo your own!  Just remember to give a 
 
  4. Run ``npm start`` to start the development server.
 
- ### Show your support
+ ## Show your support
 
  Give a ⭐ if you like my work on this website <3
 
