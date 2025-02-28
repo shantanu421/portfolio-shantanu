@@ -1,7 +1,7 @@
 {
     "name": "Shantanu | Portfolio",
     "short_name": "Shantanu",
-    "description": "Explore Shantanu's portfolio showcasing web development projects in React, Node.js, and more.",
+    "description": "Self crafted 3D portfolio made with React.js and Three.js",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#121212",
