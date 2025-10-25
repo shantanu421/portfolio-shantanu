@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="c-space my-20" id="about">
+    <section className="c-space mt-20" id="about">
       <p className="head-text mb-[25px]">Know me</p>
 
       <div className="grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-2 grid-cols-1 gap-3 h-full bg-transparent">

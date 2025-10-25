@@ -53,7 +53,7 @@ const Projects = () => {
   const currentProject = myProjects[selectedProjectIndex];
 
   return (
-    <section className="c-space my-20" id="projects">
+    <section className="c-space" id="projects">
       <p className="head-text mb-[-20px]">My Recent Works</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">

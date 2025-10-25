@@ -2,7 +2,7 @@ import { workExperiences } from "../constants/index.js";
 
 const WorkExperience = () => {
   return (
-    <section className="c-space my-20" id="experience">
+    <section className="c-space mt-40" id="experience">
       <div className="text-white-600 flex flex-col items-center justify-center ">
         <p className="head-text mb-[-20px]">My Work Experience</p>
 
