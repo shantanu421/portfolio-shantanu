@@ -5,7 +5,7 @@ const About = () => {
     <section className="c-space mt-20" id="about">
       <p className="head-text mb-[25px]">Know me</p>
 
-      <div className="grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-2 grid-cols-1 gap-3 h-full bg-transparent">
+      <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 h-full bg-transparent">
 
         {/* First row: 1 : 2 */}
         <div className="col-span-1 row-span-1">
@@ -27,17 +27,10 @@ const About = () => {
             />
             <div className="pb-2">
               <p className="grid-headtext">
-                Hi, I'm <span className="text-blue-300">Shantanu </span>
+                Hey everyone,
               </p>
               <p className="grid-subtext">
-                I love to design and develop Frontend and Backend. Being a{" "}
-                <span className="text-blue-300">Fullstack developer</span>, I
-                think it's a beautiful combination of creativity and logic. As a
-                fresher, I am eagerly looking forward to working professionally
-                and creating{" "}
-                <span className="text-blue-300">impactful features</span> for
-                the products that will significantly increase the{" "}
-                <span className="text-blue-300">company's profit</span>.
+                I'm working as an <span className="text-blue-300">Associate Software Engineer</span>, and I love bringing ideas to life through design and code. Being a <span className="text-blue-300">full stack developer</span> lets me blend creativity and logic while solving problems, building smooth user experiences, and learning something new with every commit. I genuinely enjoy turning small ideas into <span className="text-blue-300">products that make a real difference</span>.
               </p>
             </div>
           </div>
@@ -228,7 +221,7 @@ const About = () => {
               Connect With Me
             </p>
             <p className="sm:text-lg text-[16px] text-gray-300 mt-2">
-              Feel free to DM or reach out to me from the below platforms
+              You can reach me through any of these platforms.
             </p>
 
             {/* Social Media Icons */}

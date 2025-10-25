@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="c-space my-20 w-full" id="contact">
+    <section className="c-space mt-20 w-full" id="contact">
       <div className="flex items-center justify-center gap-4 relative">
         <p className="head-text">Contact me</p>
 
@@ -32,8 +32,7 @@ const Contact = () => {
 
           <div className="space-y-2 text-center">
             <p className="grid-subtext2 sm:text-xl mb-4">
-              Hire me today and let us commence the process of achieving amazing
-              things!
+              Feel free to reach out, I'd love to connect and build something great together!
             </p>
             <div
               className="copy-container flex items-center justify-center gap-2 cursor-pointer"
