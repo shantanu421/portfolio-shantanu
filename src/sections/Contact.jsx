@@ -29,11 +29,6 @@ const Contact = () => {
 
       <div className="flex flex-col md:flex-row items-center w-full sm:gap-48 gap-10 mt-6">
         <div className="contactGrid-container sm:w-full">
-          <img
-            src="assets/grid4.png"
-            alt="grid-4"
-            className="w-full md:h-[126px] sm:h-[276px] h-28 object-contain sm:object-contain"
-          />
 
           <div className="space-y-2 text-center">
             <p className="grid-subtext2 sm:text-xl mb-4">
