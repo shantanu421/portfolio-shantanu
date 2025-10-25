@@ -8,7 +8,7 @@ const About = () => {
       <div className="grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-2 grid-cols-1 gap-3 h-full bg-transparent">
 
         {/* First row: 1 : 2 */}
-        <div className="col-span-1 row-span-1 ">
+        <div className="col-span-1 row-span-1">
           <div className="relative grid-container bg-transparent">
 
             <div className="absolute top-0 right-0">
@@ -23,9 +23,9 @@ const About = () => {
             <img
               src="/assets/pfpx.png"
               alt="grid-1"
-              className="w-full sm:h-[200px] h-52 object-contain brightness-75 opacity-80"
+              className="w-full sm:h-[300px] h-52 object-contain brightness-75 opacity-80"
             />
-            <div>
+            <div className="pb-2">
               <p className="grid-headtext">
                 Hi, I'm <span className="text-blue-300">Shantanu </span>
               </p>
@@ -54,7 +54,7 @@ const About = () => {
                 className="w-full h-96 object-cover rounded-xl"
               />
             </div>
-            <div className="flex flex-col items-center gap-10">
+            <div className="flex flex-col items-center gap-10 pt-14">
               <h2 className="sm:text-2xl text-xl font-semibold text-green-200">
                 Technologies & Frameworks I work with
               </h2>
@@ -155,7 +155,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="col-span-2 row-span-1 grid-container flex flex-col items-center justify-center relative">
+        <div className="col-span-2 row-span-1 grid-container-bottom flex flex-col items-center justify-center relative">
           {/* Title & Subtitle */}
           <div className="absolute top-0 right-0">
               <img
@@ -164,7 +164,7 @@ const About = () => {
                 className="w-full h-96 object-cover rounded-xl"
               />
             </div>
-          <div className="text-center mb-24">
+          <div className="text-center mb-12">
             <p className="sm:text-2xl text-xl font-semibold sm:mt-0 mt-10 text-blue-200">
               Apart from Coding , I Love to pursue my other Passions , like
             </p>
@@ -210,7 +210,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="col-span-1 row-span-1 grid-container flex flex-col items-center justify-center relative">
+        <div className="col-span-1 row-span-1 grid-container-bottom flex flex-col items-center justify-center relative">
           <div className="absolute top-0 right-0">
               <img
                 src="/assets/spotlight4.png"
@@ -218,7 +218,7 @@ const About = () => {
                 className="w-full h-96 object-cover rounded-xl"
               />
             </div>
-          <div className="text-center grid gap-9 ">
+          <div className="text-center grid gap-8">
             <img
               src="/other-logos/connect.svg"
               alt="Connect"

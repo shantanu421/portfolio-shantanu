@@ -282,7 +282,10 @@ body {
 
   /* about */
   .grid-container {
-    @apply w-full h-full bg-slate-900 bg-opacity-35 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full bg-slate-900 bg-opacity-35 rounded-lg sm:px-7 p-4 flex flex-col gap-5;
+  }
+  .grid-container-bottom {
+    @apply w-full h-96 bg-slate-900 bg-opacity-35 rounded-lg sm:px-7 p-4 flex flex-col gap-5;
   }
 
   .grid-headtext {
