@@ -32,12 +32,18 @@ body {
   font-family: "General Sans", sans-serif;
   opacity: 0;
   animation: bodyFadeIn 5s ease-in-out forwards;
+  background-image: url('/assets/stars1.png');
+  background-repeat: repeat, no-repeat;
+  background-size: 100px, cover;
+  background-position: center top, center top;
+
 }
 
 @keyframes bodyFadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -57,7 +63,7 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 font-[500]  hover:text-white font-generalsans max-sm:hover:bg-black-200  max-sm:w-full max-sm:rounded-md py-1 max-sm:px-5;
+    @apply text-neutral-400 font-[500] hover:text-white font-generalsans max-sm:hover:bg-black-200 max-sm:w-full max-sm:rounded-md py-1 max-sm:px-5;
   }
 
   .nav-li_a {
@@ -65,7 +71,7 @@ body {
   }
 
   .nav-sidebar {
-    @apply absolute left-0 right-0 bg-black-100  backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+    @apply absolute left-0 right-0 bg-black-100 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
   }
 
   .github-button {
@@ -104,7 +110,7 @@ body {
   }
 
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md  transition-all active:scale-95 text-white mx-auto mb-[-10px];
+    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md transition-all active:scale-95 text-white mx-auto mb-[-10px];
   }
 
   .glow-on-hover {
@@ -124,18 +130,16 @@ body {
 
   .glow-on-hover:before {
     content: "";
-    background: linear-gradient(
-      45deg,
-      #ff0000,
-      #ff7300,
-      #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000
-    );
+    background: linear-gradient(45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -168,12 +172,10 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(
-      to right,
-      #020617 0%,
-      #081342 51%,
-      #020617 100%
-    );
+    background-image: linear-gradient(to right,
+        #020617 0%,
+        #081342 51%,
+        #020617 100%);
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -183,9 +185,11 @@ body {
     0% {
       background-position: 0 0;
     }
+
     50% {
       background-position: 400% 0;
     }
+
     100% {
       background-position: 0 0;
     }
@@ -208,25 +212,30 @@ body {
   }
 
   .react-glowing-logo {
-    @apply ml-[-80px] mt-[-430px] [animation-delay:3s,3s];
+    @apply ml-[-80px] mt-[-430px];
+    animation-delay: 3s, 3s;
   }
 
   .node-glowing-logo {
-    @apply ml-[100px] mt-[-160px] [animation-delay:6s,6s];
+    @apply ml-[100px] mt-[-160px];
+    animation-delay: 6s, 6s;
   }
 
   .express-glowing-logo {
-    @apply sm:ml-[1270px] ml-[20px] mt-[-450px] w-[100px] [animation-delay:9s,9s];
+    @apply sm:ml-[1270px] ml-[20px] mt-[-450px] w-[100px];
+    animation-delay: 9s, 9s;
   }
 
   .mongo-glowing-logo {
-    @apply sm:ml-[1050px] ml-[400px] mt-[-170px] [animation-delay:12s,12s];
+    @apply sm:ml-[1050px] ml-[400px] mt-[-170px];
+    animation-delay: 12s, 12s;
   }
 
   @keyframes glow {
     0% {
       filter: drop-shadow(0 0 5px #61dafb);
     }
+
     100% {
       filter: drop-shadow(0 0 25px #61dafb);
     }
@@ -236,18 +245,23 @@ body {
     0% {
       opacity: 0;
     }
+
     25% {
       opacity: 0.1;
     }
+
     50% {
       opacity: 0.2;
     }
+
     75% {
       opacity: 0.5;
     }
+
     90% {
       opacity: 0.7;
     }
+
     100% {
       opacity: 1;
     }
@@ -268,7 +282,10 @@ body {
 
   /* about */
   .grid-container {
-    @apply w-full h-full  bg-slate-900 bg-opacity-35 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full bg-slate-900 bg-opacity-35 rounded-lg sm:px-7 p-4 flex flex-col gap-5;
+  }
+  .grid-container-bottom {
+    @apply w-full h-96 bg-slate-900 bg-opacity-35 rounded-lg sm:px-7 p-4 flex flex-col gap-5;
   }
 
   .grid-headtext {
@@ -308,7 +325,7 @@ body {
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] gap-5  transition-all ease-in-out duration-500 hover:bg-slate-950 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] gap-5 transition-all ease-in-out duration-500 hover:bg-slate-950 rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
@@ -327,15 +344,13 @@ body {
 
 /* contact  */
 .contactGrid-container {
-  @apply w-[450px] h-full  bg-opacity-25 rounded-xl sm:p-7 p-4 flex flex-col;
+  @apply w-[450px] h-full bg-opacity-25 rounded-xl sm:p-7 p-4 flex flex-col;
 }
 
 .arrow-gradient {
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.1) 10%,
-    rgba(255, 255, 255, 0.000025) 50%,
-    rgba(255, 255, 255, 0.000025) 50%,
-    rgba(255, 255, 255, 0.025) 100%
-  );
+  background-image: linear-gradient(to right,
+      rgba(255, 255, 255, 0.1) 10%,
+      rgba(255, 255, 255, 0.000025) 50%,
+      rgba(255, 255, 255, 0.000025) 50%,
+      rgba(255, 255, 255, 0.025) 100%);
 }

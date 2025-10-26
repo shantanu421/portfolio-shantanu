@@ -2,40 +2,52 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="c-space my-20" id="about">
+    <section className="c-space mt-20" id="about">
       <p className="head-text mb-[25px]">Know me</p>
 
-      <div className="grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-2 grid-cols-1 gap-3 h-full bg-transparent">
+      <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 h-full bg-transparent">
+
         {/* First row: 1 : 2 */}
-        <div className="col-span-1 row-span-1 ">
-          <div className="grid-container bg-transparent">
+        <div className="col-span-1 row-span-1">
+          <div className="relative grid-container bg-transparent">
+
+            <div className="absolute top-0 right-0">
+              {/* Spotlight effect */}
+              <img
+                src="/assets/spotlight2.png"
+                alt="spotlight"
+                className="w-full h-96 object-cover rounded-xl"
+              />
+            </div>
+
             <img
               src="/assets/pfpx.png"
               alt="grid-1"
-              className="w-full sm:h-[200px] h-52 object-contain brightness-75 opacity-80"
+              className="w-full sm:h-[300px] h-52 object-contain brightness-75 opacity-80"
             />
-            <div>
+            <div className="pb-2">
               <p className="grid-headtext">
-                Hi, I'm <span className="text-blue-300">Shantanu </span>
+                Hey everyone,
               </p>
               <p className="grid-subtext">
-                I love to design and develop Frontend and Backend. Being a{" "}
-                <span className="text-blue-300">Fullstack developer</span>, I
-                think it's a beautiful combination of creativity and logic. As a
-                fresher, I am eagerly looking forward to working professionally
-                and creating{" "}
-                <span className="text-blue-300">impactful features</span> for
-                the products that will significantly increase the{" "}
-                <span className="text-blue-300">company's profit</span>.
+                I'm working as an <span className="text-blue-300">Associate Software Engineer</span>, and I love bringing ideas to life through design and code. Being a <span className="text-blue-300">full stack developer</span> lets me blend creativity and logic while solving problems, building smooth user experiences, and learning something new with every commit. I genuinely enjoy turning small ideas into <span className="text-blue-300">products that make a real difference</span>.
               </p>
             </div>
           </div>
         </div>
 
         <div className="col-span-2 row-span-1">
-          <div className="grid-container">
+          <div className="relative grid-container">
             {/* Technologies Section */}
-            <div className="flex flex-col items-center gap-10">
+
+            <div className="absolute top-0 right-0">
+              <img
+                src="/assets/spotlight3.png"
+                alt="spotlight"
+                className="w-full h-96 object-cover rounded-xl"
+              />
+            </div>
+            <div className="flex flex-col items-center gap-10 pt-14">
               <h2 className="sm:text-2xl text-xl font-semibold text-green-200">
                 Technologies & Frameworks I work with
               </h2>
@@ -136,9 +148,16 @@ const About = () => {
           </div>
         </div>
 
-        <div className="col-span-2 row-span-1 grid-container flex flex-col items-center justify-center">
+        <div className="col-span-2 row-span-1 grid-container-bottom flex flex-col items-center justify-center relative">
           {/* Title & Subtitle */}
-          <div className="text-center mb-24">
+          <div className="absolute top-0 right-0">
+              <img
+                src="/assets/spotlight1.png"
+                alt="spotlight"
+                className="w-full h-96 object-cover rounded-xl"
+              />
+            </div>
+          <div className="text-center mb-12">
             <p className="sm:text-2xl text-xl font-semibold sm:mt-0 mt-10 text-blue-200">
               Apart from Coding , I Love to pursue my other Passions , like
             </p>
@@ -184,8 +203,15 @@ const About = () => {
           </div>
         </div>
 
-        <div className="col-span-1 row-span-1 grid-container flex flex-col items-center justify-center">
-          <div className="text-center grid gap-9 ">
+        <div className="col-span-1 row-span-1 grid-container-bottom flex flex-col items-center justify-center relative">
+          <div className="absolute top-0 right-0">
+              <img
+                src="/assets/spotlight4.png"
+                alt="spotlight"
+                className="w-full h-96 object-cover rounded-xl"
+              />
+            </div>
+          <div className="text-center grid gap-8">
             <img
               src="/other-logos/connect.svg"
               alt="Connect"
@@ -195,7 +221,7 @@ const About = () => {
               Connect With Me
             </p>
             <p className="sm:text-lg text-[16px] text-gray-300 mt-2">
-              Feel free to DM or reach out to me from the below platforms
+              You can reach me through any of these platforms.
             </p>
 
             {/* Social Media Icons */}
