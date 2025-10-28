@@ -135,22 +135,32 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
+    name: "Decision Foundry",
+    pos: "Associate Software Engineer",
+    duration: "Mar 2025 - Present",
+    title:
+      "At Decision Foundry, I work on AI-powered projects, building intelligent chatbot interfaces interfaces and exploring ways to make them smarter and more interactive. I also pitch in on marketing and business projects, doing a bit of everything on both the frontend and backend. Most of my work happens in the JavaScript world with React, Angular, Node.js, Express, and MongoDB, and I’m always exploring AI to make things smarter and smoother for users.",
+    // href: "https://www.excelr.com/",
+    icon: "/assets/df.svg",
+  },
+  {
+    id: 2,
     name: "ExcelR",
     pos: "Full Stack Trainee",
     duration: "Feb 2024 - Oct 2024",
     title:
       "Worked on a full-stack application with Java, Spring Boot and Spring Security enabling role-based access control for employees and admins. Integrated REST APIs for handling complex data sets securely. Governed the backend data management with MySQL",
-    href: "https://www.excelr.com/",
+    // href: "https://www.excelr.com/",
     icon: "/assets/excelr.png",
   },
   {
-    id: 2,
+    id: 3,
     name: "Business Web Solutions",
     pos: "Full Stack Intern",
     duration: "Jan 2023 - Mar 2023",
     title:
       "Utilizing HTML, CSS, JavaScript, and React.js, delivered a number of modules and tasks that ensured responsive design and interactive user experiences.",
-    href: "https://businesswebsolutions.in/",
+    // href: "https://businesswebsolutions.in/",
     icon: "/assets/bws.png",
   },
 ];
