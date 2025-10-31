@@ -4,8 +4,6 @@
 </h2>
 
 
-
-
 <br/>
 
 <center>
@@ -23,7 +21,7 @@
 
 
 Feel free to fork and make this repo your own.
-⭐ Give a star if you loved my work :)
+### Give a ⭐ if you like my work on this website <3
 
 ## Technologies I've Used
 
@@ -38,13 +36,13 @@ Feel free to fork and make this repo your own.
 
 ## Features
 
-**A stylish glass design, Bento-Style Bio**
+- **A stylish glass design, Bento-Style Bio.**
 
-**Explore live demos within a 3D computer, switching between projects effortlessly**
+- **Explore live demos within a 3D computer, switching between projects effortlessly.**
 
-**Each component features a modern design**
+- **Each component features a modern design.**
 
-**Fully Responsive**
+- **Fully Responsive**
 
  ## Usage Instructions
 
@@ -55,10 +53,3 @@ Feel free to fork and make this repo your own.
  3. Open the project folder, then navigate to ``src/constants/index.js`` and ``src/sections``. Inside, you'll find all of the details that you can customize.
 
  4. Run ``npm start`` to start the development server.
-
- ## Show your support
-
- Give a ⭐ if you like my work on this website <3
-
-
-
