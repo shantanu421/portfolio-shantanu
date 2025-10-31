@@ -204,7 +204,7 @@ const About = () => {
         </div>
 
         <div className="col-span-1 row-span-1 grid-container-bottom flex flex-col items-center justify-center relative">
-          <div className="absolute top-0 right-0">
+          <div className="absolute top-0 right-0 pointer-events-none">
               <img
                 src="/assets/spotlight4.png"
                 alt="spotlight"
