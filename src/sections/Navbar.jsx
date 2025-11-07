@@ -75,7 +75,7 @@ const Navbar = () => {
             href="/"
             className="text-blue-300 font-bold text-3xl transition-colors"
           >
-            Ss.
+            <img src="/assets/s-3.png" alt="logo" className="h-10 w-auto object-contain" />
           </a>
 
           <button
