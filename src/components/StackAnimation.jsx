@@ -58,7 +58,7 @@ const StackAnimation = ({ onComplete }) => {
         setTimeout(() => {
           setShowTerminal(false);
           if (onComplete) onComplete();
-        }, delay + 1200);
+        }, delay + 500);
       }
     });
   };
@@ -85,7 +85,7 @@ const StackAnimation = ({ onComplete }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.6 }}
-            className="relative bg-[#0d1117] text-[#c9d1d9] border border-gray-700 rounded-lg w-[260px] sm:w-[300px] shadow-[0_0_15px_rgba(0,255,0,0.15)] p-3 text-left overflow-hidden"
+            className="relative bg-[#0d111780] text-[#c9d1d9] border border-gray-700 rounded-lg w-[260px] sm:w-[300px] shadow-[0_0_15px_rgba(0,255,0,0.15)] p-3 text-left overflow-hidden"
           >
             {/* Terminal Header */}
             <div className="flex items-center space-x-2 mb-2">
@@ -128,7 +128,6 @@ const StackAnimation = ({ onComplete }) => {
                 <div className="mt-2 relative">
                   <p className="text-gray-500">// Stack:</p>
                   <div className="flex justify-center mt-1 relative">
-                    {/* stack */}
                     <div className="flex flex-col-reverse items-center border-l border-r border-gray-600 px-2 py-1 w-[55px] h-[65px] overflow-hidden">
                       <AnimatePresence>
                         {stack.map((item, i) => (
@@ -198,7 +197,7 @@ const StackAnimation = ({ onComplete }) => {
         className="absolute text-3xl sm:text-4xl font-semibold text-gray-100 font-generalsans mt-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: showTerminal ? 0 : 1 }}
-        transition={{ duration: 1.2 }}
+        transition={{ duration: 5.2 }}
       >
         I turn ideas into{" "}
         <motion.span
