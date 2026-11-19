@@ -1,7 +1,7 @@
 {
     "name": "Shantanu | Portfolio",
     "short_name": "Shantanu",
-    "description": "Self crafted 3D portfolio made with React.js and Three.js",
+    "description": "Portfolio of Shantanu Saraf, AI Application Developer",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#121212",

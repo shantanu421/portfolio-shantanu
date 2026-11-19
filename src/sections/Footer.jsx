@@ -1,35 +1,40 @@
+const links = [
+  { name: "GitHub", href: "https://github.com/shantanu421", icon: "/assets/github.svg" },
+  { name: "X / Twitter", href: "https://x.com/shantanu_saraf", icon: "/assets/twitter.svg" },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/shantanusaraf/",
+    icon: "/assets/linkedin.svg",
+  },
+];
+
 const Footer = () => {
   return (
-    <footer className="c-space pt-5 pb-3 border-t border-black-300 flex flex-wrap justify-center md:justify-between items-center gap-6 text-center">
-      <div className="text-white-500 flex gap-2">
-        <p>Designed and Developed with 🖤</p>
+    <footer className="c-space mt-28 border-t border-code-border py-6 flex flex-wrap justify-center md:justify-between items-center gap-5 text-center font-mono text-xs text-code-muted">
+      <p>
+        <span className="text-code-green">{"/*"}</span> designed &amp; developed
+        with 🖤 <span className="text-code-green">{"*/"}</span>
+      </p>
+
+      <div className="flex gap-3 justify-center">
+        {links.map((l) => (
+          <a
+            key={l.name}
+            href={l.href}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={l.name}
+            className="btn btn-ghost btn-icon"
+          >
+            <img src={l.icon} alt="" className="w-4 h-4" />
+          </a>
+        ))}
       </div>
 
-      <div className="flex gap-6 justify-center">
-        <a
-          href="https://github.com/shantanu421"
-          target="_blank"
-          rel=" noreferrer"
-        >
-          <img src="/assets/github.svg" alt="github" className="w-5 h-5" />
-        </a>
-        <a
-          href="https://x.com/shantanu_saraf"
-          target="_blank"
-          rel=" noreferrer"
-        >
-          <img src="/assets/twitter.svg" alt="twitter" className="w-5 h-5" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/shantanusaraf/"
-          target="_blank"
-          rel=" noreferrer"
-        >
-          <img src="/assets/linkedin.svg" alt="linkedin" className="w-5 h-5" />
-        </a>
-      </div>
-
-      <p className="text-white-500 w-full md:w-auto">© 2025 Shantanu Saraf</p>
+      <p className="w-full md:w-auto">
+        © {new Date().getFullYear()} Shantanu Saraf{" "}
+        <span className="text-code-green">· exit 0</span>
+      </p>
     </footer>
   );
 };

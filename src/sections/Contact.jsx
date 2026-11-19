@@ -1,55 +1,68 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import Panel from "../components/Panel.jsx";
+import SectionHeading from "../components/SectionHeading.jsx";
+import Button from "../components/Button.jsx";
+
+const EMAIL = "shantanusaraf4@gmail.com";
 
 const Contact = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText("shantanusaraf4@gmail.com");
-    setHasCopied(true);
-
-    setTimeout(() => {
-      setHasCopied(false);
-    }, 2000);
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setHasCopied(true);
+      setTimeout(() => setHasCopied(false), 2000);
+    } catch {
+      // clipboard unavailable; the address is still visible to copy by hand
+    }
   };
 
   return (
-    <section className="c-space mt-20 w-full" id="contact">
-      <div className="flex items-center justify-center gap-4 relative">
-        <p className="head-text">Contact me</p>
+    <section className="section w-full" id="contact">
+      <SectionHeading index="04" label="contact" title="Contact me" align="center" />
 
-        <div className="relative w-[50px] h-[50px]">
-          <img
-            src="assets/email1.svg"
-            alt="Email Icon"
-            className="absolute top-0 left-0 w-full h-full object-contain transition-transform duration-500 opacity-70"
-            style={{ transform: hasCopied ? "rotate(180deg)" : "rotate(0deg)" }}
-          />
+      <Panel
+        title="contact.sh"
+        className="mx-auto max-w-2xl"
+        bodyClassName="panel-body font-mono text-sm sm:text-base"
+      >
+        <p>
+          <span className="text-code-green">$</span>{" "}
+          <span className="text-code-text">cat message.txt</span>
+        </p>
+        <p className="mt-2 mb-6 font-generalsans text-base sm:text-lg text-code-dim">
+          Feel free to reach out, I&apos;d love to connect and build something
+          great together!
+        </p>
+
+        <p>
+          <span className="text-code-green">$</span>{" "}
+          <span className="text-code-text">echo $EMAIL</span>
+        </p>
+        <p className="mt-2 break-all text-lg sm:text-2xl text-code-string">
+          {EMAIL}
+        </p>
+
+        <div className="mt-7 flex flex-wrap gap-3">
+          <Button href={`mailto:${EMAIL}`} isBeam>
+            say hello
+          </Button>
+          <Button
+            variant="ghost"
+            onClick={handleCopy}
+            icon={hasCopied ? "/assets/tick.svg" : "/assets/copy.svg"}
+            aria-live="polite"
+          >
+            {hasCopied ? "copied!" : "copy email"}
+          </Button>
         </div>
-      </div>
 
-      <div className="flex flex-col md:flex-row items-center w-full sm:gap-48 gap-10 mt-6">
-        <div className="contactGrid-container sm:w-full">
-
-          <div className="space-y-2 text-center">
-            <p className="grid-subtext2 sm:text-xl mb-4">
-              Feel free to reach out, I'd love to connect and build something great together!
-            </p>
-            <div
-              className="copy-container flex items-center justify-center gap-2 cursor-pointer"
-              onClick={handleCopy}
-            >
-              <img
-                src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
-                alt="copy"
-                className="w-7 h-7"
-              />
-              <p className="lg:text-2xl md:text-xl text-xl text-gray_gradient text-white">
-                shantanusaraf4@gmail.com
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <p className="mt-6 text-code-muted">
+          <span className="text-code-green">$</span>{" "}
+          <span className="inline-block animate-pulse text-code-green">▍</span>
+        </p>
+      </Panel>
     </section>
   );
 };

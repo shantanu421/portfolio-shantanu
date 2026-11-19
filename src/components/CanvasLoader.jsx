@@ -14,15 +14,8 @@ const CanvasLoader = () => {
       }}
     >
       <span className="canvas-loader"></span>
-      <p
-        style={{
-          fontSize: 14,
-          color: "#F1F1F1",
-          fontWeight: 800,
-          marginTop: 40,
-        }}
-      >
-        {progress !== 0 ? `${progress.toFixed(2)}%` : "Loading..."}
+      <p className="mt-4 whitespace-nowrap font-mono text-xs text-code-green">
+        {progress !== 0 ? `loading ${progress.toFixed(0)}%` : "loading..."}
       </p>
     </Html>
   );

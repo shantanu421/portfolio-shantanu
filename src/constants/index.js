@@ -3,28 +3,29 @@ export const navLinks = [
     id: 1,
     name: "Home",
     href: "#home",
-    icon: "/logos/home.svg",
   },
   {
     id: 2,
     name: "About",
     href: "#about",
-    icon: "/logos/about.svg",
   },
   {
     id: 3,
     name: "Projects",
     href: "#projects",
-    icon: "/logos/project.svg",
   },
   {
     id: 4,
     name: "Experience",
     href: "#experience",
-    icon: "/logos/exp.svg",
   },
   {
     id: 5,
+    name: "Contact",
+    href: "#contact",
+  },
+  {
+    id: 6,
     href: "https://github.com/shantanu421/portfolio-shantanu.git",
     type: "github",
   },
@@ -33,14 +34,13 @@ export const navLinks = [
 export const myProjects = [
   {
     title: "Visual Converse Plus",
-    desc: "A SaaS platform where users can generate dynamic content using AI tools like Image generation AI, Video generation AI, Code generation AI, Music generation AI, and Conversation AI. To generate unlimited content, a subscription model feature is implemented using Stripe.",
+    desc: "An AI SaaS platform with five generative tools (chat, code, image, video and music) powered by the OpenAI and Replicate APIs. Stripe subscriptions unlock unlimited generations, and Clerk handles authentication.",
     subdesc:
-      "This AI platform is built with Next.js, Tailwind CSS, and React.js. Prisma is used as a ORM to handle the data of user subscription and Api limit count",
+      "Built with Next.js, TypeScript and Tailwind CSS. Per-user API usage limits and subscription data are tracked in PostgreSQL through Prisma.",
     href: "https://visual-converse-plus.vercel.app/",
     githubHref: "https://github.com/shantanu421/visual-converse-plus.git",
     texture: "/textures/project/project1.png",
     logo: "/assets/project-logo1.png",
-    spotlight: "/assets/spotlight1.png",
     tags: [
       {
         id: 1,
@@ -74,7 +74,6 @@ export const myProjects = [
     githubHref: "https://github.com/shantanu421/vidcore.git",
     texture: "/textures/project/project2.png",
     logo: "/assets/open-source.svg",
-    spotlight: "/assets/spotlight4.png",
     tags: [
       {
         id: 1,
@@ -104,7 +103,6 @@ export const myProjects = [
 
     texture: "/textures/project/project3.png",
     logo: "/assets/project-logo3.png",
-    spotlight: "/assets/spotlight3.png",
     tags: [
       {
         id: 1,
@@ -125,22 +123,29 @@ export const myProjects = [
   },
 ];
 
-export const calculateSizes = (isSmall, isMobile, isTablet) => {
-  return {
-    deskScale: isSmall ? 0.7 : isMobile ? 0.9 : 1.3,
-    deskPosition: isMobile ? [0.8, -3.5, 0] : [2.1, -5, 0],
-  };
-};
-
 export const workExperiences = [
   {
     id: 1,
     name: "Decision Foundry",
     pos: "Associate Software Engineer",
     duration: "Mar 2025 - Present",
+    location: "Remote",
     title:
-      "At DF, I work on AI-powered projects, building intelligent chatbot interfaces and exploring ways to make them smarter and more interactive. I also pitch in on marketing and business projects, doing a bit of everything on both the frontend and backend. Most of my work happens in the JavaScript world with React, Angular, Node.js, Express, and MongoDB, and I’m always exploring AI to make things smarter and smoother for users.",
-    // href: "https://www.excelr.com/",
+      "Building production Generative AI apps: LLM tool calling, AI agents and chatbots.",
+    projects: [
+      {
+        name: "Memosight",
+        summary:
+          "AI paid-media intelligence platform. Built “Memo”, a Claude-powered analyst chatbot, and an autonomous Google Ads agent.",
+      },
+      {
+        name: "CampTag",
+        summary:
+          "Campaign URL tagging platform. Built the Bitly integration and real-time Socket.IO updates.",
+      },
+    ],
+    award:
+      "“Best Newcomer” for impact in the first year.",
     icon: "/assets/df.svg",
   },
   {
@@ -162,5 +167,81 @@ export const workExperiences = [
       "Utilizing HTML, CSS, JavaScript, and React.js, delivered a number of modules and tasks that ensured responsive design and interactive user experiences.",
     // href: "https://businesswebsolutions.in/",
     icon: "/assets/bws.png",
+  },
+];
+
+export const skillGroups = [
+  {
+    label: "AI / LLM",
+    items: [
+      "Claude API",
+      "OpenAI API",
+      "AWS Bedrock",
+      "Tool calling",
+      "Prompt engineering",
+      "Prompt caching",
+      "LangChain",
+      "LangGraph",
+      "Langfuse",
+      "AI agents",
+    ],
+  },
+  {
+    label: "Languages",
+    items: ["JavaScript", "TypeScript", "Python", "SQL", "HTML/CSS"],
+  },
+  {
+    label: "Backend",
+    items: [
+      "Node.js",
+      "Express",
+      "FastAPI",
+      "REST APIs",
+      "WebSockets (Socket.IO)",
+      "JWT",
+      "OAuth 2.0 / OIDC",
+    ],
+  },
+  {
+    label: "Frontend",
+    items: ["React", "Next.js"],
+  },
+  {
+    label: "Data",
+    items: [
+      "PostgreSQL",
+      "MongoDB (Mongoose)",
+      "Redis",
+      "MySQL",
+      "MetricFlow (semantic layer)",
+    ],
+  },
+  {
+    label: "Cloud / DevOps",
+    items: ["AWS (ECS Fargate, Bedrock)", "Terraform", "Temporal", "CI/CD"],
+  },
+  {
+    label: "Tools",
+    items: ["Git", "GitHub", "Claude Code", "Postman"],
+  },
+];
+
+export const certifications = [
+  {
+    name: "Claude Certified Architect – Foundations",
+    issuer: "Anthropic",
+    date: "Aug 2026",
+    credlyHref:
+      "https://www.credly.com/badges/ef15d6df-a66f-4127-bb70-6b950b4103bb",
+  },
+];
+
+export const education = [
+  {
+    school: "Sir Visvesvaraya Institute of Technology",
+    location: "Nashik, Maharashtra",
+    degree: "B.E. in Computer Science and Engineering",
+    grade: "CGPA: 8.18",
+    duration: "Feb 2021 - Jun 2024",
   },
 ];

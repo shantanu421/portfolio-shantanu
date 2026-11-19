@@ -7,31 +7,39 @@ import { Center } from "@react-three/drei";
 import { myProjects } from "../constants/index.js";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import DemoComputer from "../components/DemoComputer.jsx";
+import Panel from "../components/Panel.jsx";
+import SectionHeading from "../components/SectionHeading.jsx";
+import Button from "../components/Button.jsx";
 
 const projectCount = myProjects.length;
+
+const slug = (title) =>
+  title
+    .toLowerCase()
+    .replace(/\(.*?\)/g, "")
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-");
 
 const Projects = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
 
   const handleNavigation = (direction) => {
-    setSelectedProjectIndex((prevIndex) => {
-      if (direction === "previous") {
-        return prevIndex === 0 ? projectCount - 1 : prevIndex - 1;
-      } else {
-        return prevIndex === projectCount - 1 ? 0 : prevIndex + 1;
-      }
-    });
+    setSelectedProjectIndex((prevIndex) =>
+      direction === "previous"
+        ? (prevIndex - 1 + projectCount) % projectCount
+        : (prevIndex + 1) % projectCount
+    );
   };
 
   useGSAP(() => {
     gsap.fromTo(
-      `.animatedText`,
+      ".animatedText",
       { opacity: 0 },
       { opacity: 1, duration: 1, stagger: 0.2, ease: "power2.inOut" }
     );
 
     gsap.fromTo(
-      ".animatedGitHub, .animatedCheckDemo",
+      ".animatedActions",
       { opacity: 0, y: -10 },
       { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }
     );
@@ -53,110 +61,127 @@ const Projects = () => {
   const currentProject = myProjects[selectedProjectIndex];
 
   return (
-    <section className="c-space mt-20" id="projects">
-      <p className="head-text mb-[-20px]">My Recent Works</p>
+    <section className="section" id="projects">
+      <SectionHeading index="02" label="projects" title="My Recent Works" />
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-        <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5  bg-slate-900 bg-opacity-35 shadow-2xl shadow-black-200">
-          <div className="absolute top-0 right-0">
-            <img
-              src={currentProject.spotlight}
-              alt="spotlight"
-              className="w-full h-96 object-cover rounded-xl"
-            />
-          </div>
+      {/* projects[] — array cells as the project picker */}
+      <div className="mb-5 font-mono text-xs sm:text-sm">
+        <p className="mb-3 text-code-muted">
+          <span className="text-code-purple">const</span>{" "}
+          <span className="text-code-text">projects</span> = [
+        </p>
+        <div className="flex flex-wrap gap-3">
+          {myProjects.map((project, i) => {
+            const active = i === selectedProjectIndex;
+            return (
+              <button
+                key={project.title}
+                type="button"
+                onClick={() => setSelectedProjectIndex(i)}
+                aria-pressed={active}
+                className={`group relative min-w-[120px] rounded-lg border px-4 pt-5 pb-2.5 text-left transition-all duration-300 ${
+                  active
+                    ? "border-code-green bg-code-green/10 text-code-green shadow-[0_0_18px_rgba(0,255,136,0.2)]"
+                    : "border-code-border bg-code-bg/70 text-code-text hover:border-code-blue/60"
+                }`}
+              >
+                <span
+                  className={`absolute left-2.5 top-1.5 text-[10px] ${
+                    active ? "text-code-green/80" : "text-code-muted"
+                  }`}
+                >
+                  [{i}]
+                </span>
+                {project.title.replace(/\s*\(.*\)/, "")}
+              </button>
+            );
+          })}
+        </div>
+        <p className="mt-3 text-code-muted">];</p>
+      </div>
 
-          <div className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg opacity-75">
-            <img
-              className="w-10 h-10 shadow-sm animatedLogo"
-              src={currentProject.logo}
-              alt="logo"
-            />
-          </div>
-
-          <div className="flex flex-col gap-5 text-white-600 my-5">
-            <p className="text-white text-2xl font-semibold animatedText">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 w-full">
+        <Panel
+          title={`projects/${slug(currentProject.title)}.md`}
+          meta={`${selectedProjectIndex + 1} / ${projectCount}`}
+          bodyClassName="panel-body flex flex-col gap-6 h-full"
+          className="flex flex-col"
+        >
+          <div className="flex items-center gap-4">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border border-code-border bg-code-panel/60">
+              <img
+                className="h-9 w-9 object-contain"
+                src={currentProject.logo}
+                alt=""
+              />
+            </div>
+            <p className="text-code-bright text-2xl font-semibold animatedText">
               {currentProject.title}
             </p>
+          </div>
 
+          <div className="flex flex-col gap-4 text-code-dim leading-relaxed">
             <p className="animatedText">{currentProject.desc}</p>
             <p className="animatedText">{currentProject.subdesc}</p>
           </div>
 
-          <div className="flex items-center justify-between flex-wrap gap-5">
-            <div className="flex items-center gap-3">
-              {currentProject.tags.map((tag, index) => (
-                <div key={index} className="tech-logo animatedTechLogo">
-                  <img src={tag.path} alt={tag.name} />
-                </div>
-              ))}
-            </div>
-
-            <div
-              className={`flex items-center gap-7 sm:mt-1 mt-4 sm:mr-5 animatedGitHub animatedCheckDemo ${
-                currentProject.githubHref ===
-                "https://github.com/shantanu421/vidcore.git"
-                  ? "mt-0 mr-[300px]"
-                  : ""
-              }`}
-            >
-              <a
-                href={currentProject.githubHref}
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2 text-white-600"
-              >
-                <p>GitHub</p>
-                <img
-                  src="/other-logos/github.svg"
-                  alt="GitHub"
-                  className="w-5 h-5 opacity-60"
-                />
-              </a>
-
-              {currentProject.href !== "NA" && (
-                <a
-                  className="flex items-center gap-2 cursor-pointer text-white-600 animatedCheckDemo"
-                  href={currentProject.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <p>Check Demo</p>
-                  <img
-                    src="/assets/arrow-up.png"
-                    alt="arrow"
-                    className="w-3 h-3 opacity-70"
-                  />
-                </a>
-              )}
-            </div>
+          <div className="flex flex-wrap gap-2">
+            {currentProject.tags.map((tag) => (
+              <span key={tag.id} className="chip animatedTechLogo">
+                <img src={tag.path} alt="" className="h-4 w-4 object-contain" />
+                {tag.name}
+              </span>
+            ))}
           </div>
 
-          <div className="flex justify-between items-center mt-7">
-            <button
-              className="arrow-btn"
+          <div className="flex flex-wrap gap-3 animatedActions">
+            {currentProject.href !== "NA" && (
+              <Button href={currentProject.href} icon="/assets/arrow-up.png">
+                live demo
+              </Button>
+            )}
+            <Button
+              href={currentProject.githubHref}
+              variant="ghost"
+              icon="/other-logos/github.svg"
+            >
+              source
+            </Button>
+          </div>
+
+          <div className="mt-auto flex items-center justify-between border-t border-code-border pt-5">
+            <Button
+              variant="ghost"
+              size="sm"
               onClick={() => handleNavigation("previous")}
+              aria-label="Previous project"
             >
-              <img src="/assets/left-arrow.png" alt="left arrow" />
-            </button>
-
-            <button
-              className="arrow-btn"
+              ← prev
+            </Button>
+            <span className="font-mono text-xs text-code-muted">
+              projects[<span className="text-code-green">{selectedProjectIndex}</span>]
+            </span>
+            <Button
+              variant="ghost"
+              size="sm"
               onClick={() => handleNavigation("next")}
+              aria-label="Next project"
             >
-              <img
-                src="/assets/right-arrow.png"
-                alt="right arrow"
-                className="w-4 h-4"
-              />
-            </button>
+              next →
+            </Button>
           </div>
-        </div>
+        </Panel>
 
-        <div className="bg-slate-900 bg-opacity-25 rounded-lg h-96 md:h-full">
+        <Panel
+          title="preview"
+          meta={<span className="text-code-green">● live</span>}
+          bodyClassName="h-96 lg:h-auto lg:flex-1 lg:min-h-[480px]"
+          className="flex flex-col"
+          hover={false}
+          delay={0.1}
+        >
           <Canvas>
             <ambientLight intensity={1.5} />
-
             <directionalLight position={[100, 0, 10]} />
             <Center>
               <Suspense fallback={<CanvasLoader />}>
@@ -166,7 +191,7 @@ const Projects = () => {
               </Suspense>
             </Center>
           </Canvas>
-        </div>
+        </Panel>
       </div>
     </section>
   );

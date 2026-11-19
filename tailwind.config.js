@@ -5,8 +5,32 @@ export default {
     extend: {
       fontFamily: {
         generalsans: ['General Sans', 'sans-serif'],
+        mono: [
+          '"JetBrains Mono"',
+          'ui-monospace',
+          'SFMono-Regular',
+          'Menlo',
+          'Consolas',
+          'monospace',
+        ],
       },
       colors: {
+        // "code editor / memory" design tokens, shared with MemoryHero
+        code: {
+          bg: '#0d1117',
+          panel: '#161b22',
+          border: '#30363d',
+          muted: '#6e7681',
+          dim: '#8b949e',
+          text: '#c9d1d9',
+          bright: '#e6edf3',
+          blue: '#58a6ff',
+          green: '#00ff88',
+          purple: '#d2a8ff',
+          red: '#ff7b72',
+          string: '#a5d6ff',
+          yellow: '#e3b341',
+        },
         black: {
           DEFAULT: '#000',
           100: '#010103',
