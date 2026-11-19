@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../components/Button.jsx";
 import MemoryHero from "../components/MemoryHero.jsx";
-import pdf from "/assets/Shantanu_Saraf_Resume.pdf";
+
+/* global __RESUME_VERSION__ */
+// Versioned by content hash (see vite.config.js) so an updated PDF is never served from cache
+const pdf = `/assets/Shantanu_Saraf_Resume.pdf?v=${__RESUME_VERSION__}`;
 
 const BOOT_LINE = "> _ Launching Resume Interface...";
 
