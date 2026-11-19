@@ -1,28 +1,23 @@
-import { useCallback, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../components/Button.jsx";
 import MemoryHero from "../components/MemoryHero.jsx";
 import pdf from "/assets/Shantanu_Saraf_Resume.pdf";
 
+const BOOT_LINE = "> _ Launching Resume Interface...";
+
 const Hero = () => {
   const [bottomBoot, setBottomBoot] = useState([]);
   const [showResume, setShowResume] = useState(false);
-  const booted = useRef(false);
 
-  const runBottomBoot = useCallback(() => {
-    if (booted.current) return;
-    booted.current = true;
-
-    const bottomSequence = ["> _ Launching Resume Interface..."];
-    let delay = 600;
-    bottomSequence.forEach((line, i) => {
-      setTimeout(() => setBottomBoot((prev) => [...prev, line]), delay);
-      delay += 1200;
-      if (i === bottomSequence.length - 1) {
-        setTimeout(() => setShowResume(true), delay);
-        setTimeout(() => setBottomBoot([]), delay + 500);
-      }
-    });
+  // Launch the resume button right away, while the hero animation plays
+  useEffect(() => {
+    const timers = [
+      setTimeout(() => setBottomBoot([BOOT_LINE]), 800),
+      setTimeout(() => setShowResume(true), 2000),
+      setTimeout(() => setBottomBoot([]), 2500),
+    ];
+    return () => timers.forEach(clearTimeout);
   }, []);
 
   return (
@@ -38,7 +33,7 @@ const Hero = () => {
       </div>
 
       <div className="flex-1 flex items-center w-full pt-10 pb-32 sm:pb-36">
-        <MemoryHero onReady={runBottomBoot} />
+        <MemoryHero />
       </div>
 
       <AnimatePresence>
